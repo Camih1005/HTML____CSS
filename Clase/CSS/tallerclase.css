@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    }
+
+    body {
+        background: #000063;
+        text-align: right;
+        font-family: sans-serif;
+        margin: 0;
+     }
+
+     
+header{
+    display: flex;
+    height: 70px;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+a{
+    text-decoration: none;
+}
+header h2{
+
+    font-size: 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+}
+.logo img{
+    margin-right: 10px;
+    height: 50px;
+}
+header nav,button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2vw;
+    align-items: center;
+    justify-content: center;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    flex-direction: column;
+    padding: 2px;
+    text-align-last: center;
+}
+header .logo{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.5vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#hola td{
+    background-color: #860000;
+    color: aqua;
+}
+    
+
+#tipos{
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+     ,url(../HTML_CSS/Imagenes/High-building-windows-glass-sunshine_2880x1800.jpg);
+     background-repeat: no-repeat; /*la imagen solo aparece una vez en el recuadro*/
+     background-size: cover; /*hace que la imagen se extienda en el recuadro*/
+     
+}
+#tipos h2{
+    color: aliceblue;
+    font-size: 4vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#tipos button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(67, 67, 255);
+    border-radius: 10% / 100%;
+    border: #f80606;
+    font-size: 2vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 30px;
+    padding: 17px;
+
+    
+}
+
+#tipos button:hover{
+    font-size: 1.1vw;
+    background-color: rgb(29, 46, 141);
+    transform: translate(20px,10px)
+
+
+
+}
+

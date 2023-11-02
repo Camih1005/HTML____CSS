@@ -1,0 +1,367 @@
+ *{
+    box-sizing: border-box;
+ }
+ html{
+    scroll-behavior: smooth; /*Esto lo que hace es que en las secciones de html que dice tenga una forma mas diverida de ir a la seccion*/
+ }
+ 
+ body{
+     font-family: 'Times New Roman', Times, serif;
+     margin: 0;
+}
+
+/*esto cambnia de tamaño cada cosa que quiera usando el comando como el(h1,h2,p,ul, o li*/
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;} 
+ul{list-style: none;}
+li{font-size: 1.5em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold; /*esto pone negrilla la letra*/
+    padding: 10px 30px;/*esto cambia el tamaño del botton*/
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.5); /*Color borde del botton*/
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);/*Sombra borde del botton*/
+    color: aliceblue;
+    background-color: blue;
+
+}
+
+button:hover{
+    background-color: rgb(202, 35, 202);/*cuando pasamos el cursos por encima cambia de color*/
+}
+.container{ /*Esto le da formato a la pagina, sirve para que queden bordes y todo lo de la img ude centrado*/
+    max-width: 1400px;
+    margin: auto;
+}
+.color-acento{color: rgb(0, 17, 255);}
+
+header{
+    background-color: rgb(255, 255, 255);
+
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(103, 0, 200);
+    font-size: 1.6em;
+}
+header .container{              /*dentro del header se pone lo que este por ejemplo. coontainer, o logo*/
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+header .nav{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight:bold;
+    color: rgb(5, 5, 255); 
+
+}
+
+header a:hover{
+
+    color: rgb(16, 11, 20);
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(214, 4, 4, 0.5),
+        rgba(4, 0, 255, 0.5)
+        )
+     ,url(../Imagenes/vidrio.jpg);
+     background-repeat: no-repeat; /*la imagen solo aparece una vez en el recuadro*/
+     background-size: cover; /*hace que la imagen se extienda en el recuadro*/
+
+}
+#hero h1{
+    color: white;
+    font-size: 5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#hero button{
+
+    font-size: 1.7em;
+}
+
+
+#somos-proya .container{
+text-align: center;
+padding: 200px 12px; /*Esto le da un tamaño al texto por fuera para que dentro de eso este el texto*/
+
+}
+
+#nuestros-programas p{
+    font-family: cursive;
+    display: none;
+}
+
+#nuestros-programas h2{
+    font-size: 3.2em;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#nuestros-programas h3{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#nuestros-programas{
+     font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(30, 30, 30);
+    color: aliceblue;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 150px 12px;
+    
+
+}
+#nuestros-programas h2{
+    margin-top: 0;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+#nuestros-programas .carta{
+    background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin:30px;
+        border-radius: 10px;
+
+}
+
+.carta:first-child{
+    
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+        ,url("https://www.factoryglass.com.co/images/32/vidrios-de-colores-en-colombia-480.jpg");
+        
+        
+}
+
+
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+        ,url("https://images.adsttc.com/media/images/5f98/767e/63c0/1782/cd00/0625/medium_jpg/security-glass-3.jpg?1603827318");
+        
+
+}
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+        ,url("https://www.amacal.com/wp-content/uploads/2018/11/cristal-templado.png");
+       
+    
+}
+
+#caracteristicas .container{
+    text-align: center;    
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+
+    margin: 15px 0px;
+    font-weight: bold;
+}
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 250px 12px;
+    background-color:rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    height: 80vh;
+}
+
+.color-pormayor{color: rgb(38, 181, 9);}
+
+#final h2{
+    font-size: 3vw;
+}
+
+#final button{
+    color: rgb(255, 255, 255);
+    background-color: darkgreen;
+    font-size: 5vw;
+}
+
+#final button:hover{
+    font-size: 5.5vw;
+    background-color: rgb(0, 121, 4);
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    
+}
+footer p{
+
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 12px ;
+
+}
+
+footer.container{
+    height: 150px;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+}
+@media(min-width:720px){ /*esto lo que hace es que cuando la pantalla pasa de los 720px hagan estos cambio..., esto se hacepara las computadoras, lo que wse hixo arriba es para celular*/
+
+header{
+    
+}
+
+header.container{
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+#hero h1{
+    font: 5em;
+}
+
+#somos-proya .texto{
+    width: 50%;
+    text-align: initial;
+
+    padding-left: 30px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos-proya .container{
+display: flex;
+}
+
+#somos-proya h2{
+
+    margin-top: 0px;
+}
+
+#somos-proya .img-container{
+
+    background-image:url("../Imagenes/imagen1.jpg") ;
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    
+
+}
+
+#nuestros-programas .programas{
+    display: flex;
+    justify-content: center;
+
+}
+
+#nuestros-programas p{
+    display: block;
+    margin-bottom: 30px;
+
+}
+
+#nuestros-programas h3{
+    margin-top: 0;
+}
+
+#nuestros-programas .carta{
+
+    padding: 15px;
+    background-size: 100px 150px;
+    background-repeat: no-repeat;
+    background-position-y:  0;
+    background-color: rgba(50,50,50,0.5);
+    box-shadow: 2px 2px 10px                                ;
+}
+
+
+.carta:first-child{
+    
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+        ,url("https://www.factoryglass.com.co/images/32/vidrios-de-colores-en-colombia-480.jpg");
+        
+        
+}
+
+
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+        ,url("https://images.adsttc.com/media/images/5f98/767e/63c0/1782/cd00/0625/medium_jpg/security-glass-3.jpg?1603827318");
+        
+
+}
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        )
+        ,url("https://www.amacal.com/wp-content/uploads/2018/11/cristal-templado.png");
+       
+    
+}
+
+
+}

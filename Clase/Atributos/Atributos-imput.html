@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos input</title>
+</head>
+<body>
+
+    <h1>Atributos input</h1>
+    <hr>
+    <br>
+    <form action="">
+        <label for="fnombre">Nombre</label>
+        <input type="text" name="fnombre" id = "fnombre" maxlength="15" min="1" placeholder="Ingrese su primer nombre" size="20">
+     <BR></BR>
+     <label for="pass">Contraseña</label>
+     <input type="password" name="pass" id = "fpass">
+  <BR></BR>
+<!---------------------BROWSER----------------------------------------->
+
+<label for="fnombre">Escoja su navegador</label>
+<input type="text" name="fnombre" id = "fnombre" maxlength="15" min="1" placeholder="Ingrese el navegador" size="20" list="browser" pattern="[a-z A-Z]{1,15}" >
+<datalist id="browser" >
+    <option value="Chrome"></option>
+    <option value="Edge"></option>
+    <option value="Opera"></option>
+    <option value="Firefox"></option>
+    <option value="Eplorer"></option>
+    <option value=""></option>
+
+</datalist>
+<br><br>
+<input type="submit" value="Enviar">
+<input type="reset" value="limpiar">
+
+<!----------RADIO-->
+<BR></BR>
+1. Lenguaje de programacion favorita
+<br>
+<input type="radio" name="lengpro" id="Ada" > 
+<label for="lengpro">Ada</label><br>
+<input type="radio" name="lengpro" id="Python" >
+<label for="lengpro">Python</label><br>
+<input type="radio" name="lengpro" id="Java" >
+<label for="lengpro">Java</label><br>
+<input type="radio" name="lengpro" id="JavaScript" > 
+<label for="lengpro">JavaScript</label><br>
+    </form>
+    
+</body>
+</html>

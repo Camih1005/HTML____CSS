@@ -1,0 +1,25 @@
+*{
+    color:rgb(255, 0, 0)}
+    p{
+        color: beige;
+    }
+    .text-import{
+        font-size: 18px;
+    }
+
+    #text-html{
+        color: blueviolet;
+    }    
+
+    div p sup{
+        color: aqua;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    div p.text-import{
+    color: cadetblue;    
+    }
+    u, i, p{
+        color: black;
+        border: 1px solid #111
+    }
