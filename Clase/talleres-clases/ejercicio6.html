@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EJERCICIO</title>
     <style>
+       
+        }
+        a{
+            font-size:  0.9em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        p{
+            font-size:  0.9em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         h1 {
             margin: 10px 10px 10px 10px;
             padding: 10px 10px 10px 10px;
@@ -18,7 +30,8 @@
             position: relative;
             right: 20px;
             bottom: 70px;
-
+            
+            
 
 
         }
@@ -28,6 +41,8 @@
             width: 150px;
             margin: 10px 0 0 0;
             padding: 10px;
+            position: relative;
+            bottom: 20px;
         }
 
         .segundo {
@@ -36,6 +51,7 @@
             width: 150px;
             margin: 10px 0 0 0;
             padding: 10px;
+            
         }
 
         a {
@@ -55,6 +71,8 @@
         nav a {
             text-decoration: none;
             text-align: left;
+            color: bisque;
+
 
 
 
@@ -67,7 +85,8 @@
             padding: 10px;
             float: right;
             position: relative;
-            bottom: 850px;
+            bottom: 880px;
+            font-family: Arial, Helvetica, sans-serif;
 
 
 
@@ -76,14 +95,19 @@
         #cosa {
             border: solid 1px rgb(185, 88, 75);
             background-color: chocolate;
+            box-shadow: 3px 3px 3px 3px gray  ;
+            border-radius:5px;
+            text-align: center;
+            border-style: groove ;
+            
         }
 
         .cuarto {
-            border: solid 1px;
+            border: solid 0px;
             margin: 230px;
             height: 600px;
             position: relative;
-            bottom: 1065px;
+            bottom: 1100px;
         }
 
         footer div{
@@ -98,25 +122,63 @@
         footer div a{
             margin: 10px;
             text-decoration: none;
-            padding: 10px;
+            padding: 0px;
         }
         .final{
-            position: relative;
-            left: 1200px;
             color: black;
-            padding: 10px;
+            padding: 6px;
+            position: relative;
+            left: 980px;
+            text-align:end;
+        }
+        .imagenes{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 8px;
+            border-radius: 20%;
+            border-style: double;
+            border-color: chocolate;
+            box-shadow: 3px 3px 3px 3px gray;
+            
+        }
+        input{
+            padding:4px;
+            border-radius: 5px;
+            border:solid 2px rgb(237, 115, 44);
+            background-color: transparent;
+            background-color: rgb(255, 106, 0)(0, 0, 255, 0.439);
+            font-size: 1.2rem;
+            color: rgb(255, 187, 127);
+            letter-spacing: .5px;
+           
+        }
+        .logo{
+            box-shadow: 3px 3px 3px 3px gray  ;
+            border-radius: 20px;
+            border-style:groove solid ridge;
+            border-color: blue rgb(255, 119, 0);
+        }
+        .logo :hover{
+            color: black;
+            background-color: aquamarine;
+        }
+        .center{
+            text-align: center;
 
         }
+        
+        
     </style>
 </head>
 
 <body>
 
-    <h1><img src="../CSS/imag/logo.gif" alt=""></h1>
+    <h1><img class="logo" src="../CSS/imag/logo.gif" alt=""></h1>
 
     <header>
-        <label for="Buscar">Buscar</label>
-        <input type="text" name="fnombre" id="fnombre" maxlength="15" min="1" placeholder="🔍Buscar" size="20"
+        <label for="Buscar"></label>
+        <input type="search" name="fnombre" id="Buscar" maxlength="15" min="1" placeholder="🔍Buscar" size="20"
             list="browser" pattern="[a-z A-Z]{1,15}">
     </header>
 
@@ -134,7 +196,7 @@
 
         <article class="primero">
             <p>
-            <h2><a>Noticias</a></h2><br>dd/mm/aaa <a>lorem ipsum dolor sit amet</a> <br><a>Noticias</a><br>dd/mm/aaa
+            <h2 class="center"><a>Noticias</a></h2><br>dd/mm/aaa <a>lorem ipsum dolor sit amet</a> <br><a>Noticias</a><br>dd/mm/aaa
             <a>lorem ipsum dolor sit amet</a> <br><a>Noticias</a><br>dd/mm/aaa <a>lorem ipsum dolor sit amet</a>
             <br><a>Noticias</a><br>dd/mm/aaa <a>lorem ipsum dolor sit amet</a> <br><a>Noticias</a><br>dd/mm/aaa <a>lorem
                 ipsum dolor sit amet</a>
@@ -144,7 +206,7 @@
 
         <article class="segundo">
             <p>
-            <h2><a href="">Publicidad</a></h2><br><br>
+            <h2 class="center"><a href="">Publicidad</a></h2><br><br>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consectetur eum fuga atque qui autem
             natus fugit, adipisci inventore aspernatur cupiditate quasi? Aliquam quibusdam error, quaerat nihil itaque
             consequuntur molestias.
@@ -155,12 +217,12 @@
         </article>
 
         <article class="tercero">
-            <p>
+            
             <h2 id="cosa">Phasellus blandit</h2>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum repudiandae, ab amet porro culpa magnam
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum repudiandae, ab amet porro culpa magnam
             tempora labore hic, ipsam, minus eligendi itaque? Perspiciatis similique officia suscipit, aperiam sed
-            molestias autem. <a href="">Sigue leyendo</a>
-            <h2 id="cosa">Nullam vel turpis</h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+            molestias autem. <a href="">Sigue leyendo</a></p>
+            <p><h2 id="cosa">Nullam vel turpis</h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
             error,
             temporibus, recusandae ratione debitis quia praesentium at corporis eos quae aut, quis placeat voluptatum
             soluta quas veritatis ducimus. Minima, eligendi! <a href="">Sigue leyendo</a></p>
@@ -169,13 +231,15 @@
 
         </article>
         <article class="cuarto">
-            <h2>Lorem ipsum solor sit amet, consectetuer adipiscing elit</h2>
+            <h2>Ya conocian ustedes el Hyper auto #1 de Lamborghini?</h2>
+            <img class="imagenes" src="../CSS/imag/gate_models_s_02_m.webp" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est nostrum minima similique quidem quam
                 ratione laboriosam doloremque libero nisi adipisci natus, doloribus nulla, voluptatibus commodi ullam,
                 quo incidunt omnis!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum libero velit repellat
                 laudantium porro maxime non minima cumque necessitatibus quos repudiandae animi vero excepturi, nam ab,
-                rerum eius sed autem! <a href="">Sigue leyendo...</a></p>
-            <h2>Vivamus lobortis turpis ac ante fringilla faucibus</h2>
+                rerum eius sed autem! <a href="">Sigue leyendo...</a></p><br> <br>
+            <h2>Hyper auro mas esperado del año!</h2>
+            <img class="imagenes" src="../CSS/imag/Lamborghini_Revuelto_IMG01.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat et, aliquid accusantium
                 eius omnis voluptatibus consequuntur explicabo quo quaerat quos rerum delectus nemo. Saepe aperiam
                 explicabo nemo itaque molestias?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
@@ -183,7 +247,18 @@
                 eaque voluptatem sapiente animi unde laborum. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Repudiandae, expedita ipsa fugit neque laudantium provident temporibus aliquam, molestiae ex et ipsum
                 voluptatum esse, magnam minima. Consequuntur ipsum aliquid facere provident! <a href="">Seguir
-                    leyendo....</a></p>
+                    leyendo....</a></p><br>
+                    <h2>Lamborghini Revuelto 2024</h2>
+            <img class="imagenes" src="../CSS/imag/carro2.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat et, aliquid accusantium
+                eius omnis voluptatibus consequuntur explicabo quo quaerat quos rerum delectus nemo. Saepe aperiam
+                explicabo nemo itaque molestias?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                impedit. Neque quam quod qui totam, modi iste quaerat obcaecati atque dicta beatae accusantium expedita
+                eaque voluptatem sapiente animi unde laborum. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Repudiandae, expedita ipsa fugit neque laudantium provident temporibus aliquam, molestiae ex et ipsum
+                voluptatum esse, magnam minima. Consequuntur ipsum aliquid facere provident! <a href="">Seguir
+                    leyendo....</a></p><br>
+            
         </article>
 
         <footer>
