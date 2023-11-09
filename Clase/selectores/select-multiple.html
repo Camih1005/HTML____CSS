@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STyle>
+        .classic {
+            border: 2px solid tomato;
+        }
+
+        .primary {
+            font-size: 5rem;
+
+        }
+
+        .large {
+            width: 50%;
+
+        }
+
+        button.classic.primary.large {
+            color: green;
+        }
+        button.classic.primary.large:active {
+            color: rgb(247, 12, 12);
+            border: 10px solid yellow;
+        }
+
+        .button[disabled] {
+            width: 25%;
+        }
+
+        [disabled] {
+            border: 2px solid black;
+            margin-left: 50px;
+        }
+
+        a[rel="nofollow"] {
+            background-color: black;
+        }
+
+        [data-mood~="happy"] {
+
+            background-color: rgb(118, 118, 163);
+            padding: 10px;
+        }
+
+        [lang|="es"] {
+            background-color: blueviolet;
+            color: rgb(223, 154, 26);
+            padding: 5px;
+
+        }
+        [lang|="es"]:hover {
+            background-color: red;
+            border: solid black;
+
+        }
+        a[href]::after{
+            content: "url:[" attr(href)"]";
+            display: inline-block;
+            color: #754242;
+        }
+        a[href^="http://"]::after{
+            content: "(pagina insegura):"
+            attr(href);
+            color:red
+        }
+        a[href^="https://"]:link{
+            color:rgb(253, 0, 0);
+            border:solid 4px color green;
+        }
+        
+        a[href$=".pdf"]::before{
+            content: url(../CSS/imag/carro3.jpg);
+        }
+        a[href*="campus"]{
+            border: solid green;
+        }
+        input:focus{
+            color: #000000;
+            background-color: rgb(158, 148, 167);
+            border: 5px solid cornflowerblue
+        }
+        form:focus-within{
+            background-color: blue;
+        }
+    </STyle>
+</head>
+
+<body>
+    <button class="classic primary large">boton</button>
+
+    <br><br>
+    <button class="classic large" disabled>boton 2</button>
+    <br><br>
+    <input type="radio" name="miradio" id="miradio" disabled>
+    <br><br>
+    <a href="http://www.campuslands.com" rel="nofollow">campuslands</a>
+    <br><br>
+    <a href="http://www.google.com" data-mood="happy sad">Google</a>
+    <br><br>
+    <div data-mood="happy sad">UNO</div>
+    <br><br>
+    <div lang="es-MX en-EN">English</div>
+    <br><br>
+    <a href="https://www.campuslands.com">campus land</a>
+    <br>
+    <a href="http://www.campuslands.com">campus land</a>
+    <br><br>
+    <a href="http://www.campuslands.pdf" download>Documento pdf de campus</a>
+    <br><br>
+    <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre"><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname">
+</form>
+
+
+</body>
+
+</html>
