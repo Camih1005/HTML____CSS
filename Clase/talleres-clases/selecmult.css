@@ -1,0 +1,67 @@
+nav {
+    border: 2px rgb(0, 47, 255);
+    border-style: outset;
+    width: 400px;
+    height: 250px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+p {
+    background-image: url(../CSS/imag/fondo_menu.gif);
+    height: 30px;
+    margin: 0px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+
+}
+
+li {
+    border: 1px solid black;
+    width: 150px;
+    list-style-type: none;
+    padding-left: 20px;
+    
+}
+
+.imagen {
+    width: 14px;
+    height: 14px;
+}
+
+span {
+    background-image: url(../CSS/imag/flecha_activa.png);
+
+}
+
+td a{
+    color: #0c0c0c;
+    text-decoration: none;
+}
+.lista li{
+    background-image: url(../CSS/imag/flecha_inactiva.png);
+    background-repeat: no-repeat;
+    color: rgb(61, 58, 58);
+}
+.lista li:hover{
+    background-image: url(../CSS/imag/flecha_activa.png);
+    color: black;
+    font-weight: bold;
+    background-color: rgb(241, 241, 229);
+
+}
+td a:hover{
+    color: #3b3b3b;
+}
+table{
+    background-color: beige;
+    width: 100%;
+}
+.minimizar{
+    width: 60px;
+    height: 30px;
+}
