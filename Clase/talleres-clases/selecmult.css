@@ -49,6 +49,10 @@ td a{
     color: rgb(61, 58, 58);
     position: relative;
     top: 20px;
+    
+}
+.lista a{
+    text-decoration: none;
 }
 .lista li:hover{
     background-image: url(../CSS/imag/flecha_activa.png);
@@ -62,7 +66,7 @@ td a:hover{
 }
 table{
     background-color: beige;
-    width: 100%;
+    width: 400px;
 }
 #menu{
     width: 60px;
