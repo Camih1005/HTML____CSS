@@ -11,9 +11,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
         body{
-            margin: 0px;
+            margin: auto;
             background-color:rgb(160, 160, 255);
             background-repeat:unset;
+            margin-bottom: 20px;
+            
             
 
         }
@@ -37,7 +39,7 @@
             
 
         }
-        li a{
+        .borde a{
             
             text-align: center;
             font-size: 15px;
@@ -56,7 +58,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 5%;
+            margin: 20 5%;
             
             
 
@@ -117,7 +119,10 @@
     }
     .navv{
             background-color: rgb(127, 138, 255);
-            padding: 5px;
+            padding: auto;
+            display: flex;
+            justify-content: center;
+            height: 40px;
             margin-top: 0px;
             margin-bottom: 50px;
         }
@@ -125,21 +130,25 @@
         .navv a {
             text-decoration: none;
             color: rgb(255, 255, 255);
+            padding: auto;
             
 
         }
 
-        .navv li{
+        .navv ul li{
             list-style-type: none;
             display: inline-block;
             font-size: 15px;
             font-family: 'Zen Dots', sans-serif;
             
             
+            
 
         }
-        nav li :hover{
-            background-color: rgba(95, 71, 254, 0.51);
+        nav ul li :hover{
+            color: rgb(170, 170, 170);
+            transform: scaleX(1.1);
+            
         }
         
   
@@ -150,10 +159,8 @@
 <body>
     <nav class="navv">
         <ul class="animate__animated animate__fadeInBottomLeft">
-            <li><a href="">Inicio</a></li>
-            <li><a href="">¿Quienes somos?</a></li>
-            <li><a href="">Contacto</a></li>
-            <br>
+            <li><a href="">Camilo Andres Hernandez Torres C4</a></li>
+            
         </ul>
     </nav>
 
