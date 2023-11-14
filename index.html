@@ -11,7 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
         body{
-            margin: 5%;
+            margin: 0px;
             background-color:rgb(160, 160, 255);
             background-repeat:unset;
             
@@ -31,6 +31,7 @@
             display: flex;
             padding-right: 30px;
             margin-bottom: 40px;
+            margin: 0 5%;
             
             
             
@@ -55,7 +56,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            margin: 0 5%;
             
             
 
@@ -83,6 +84,8 @@
             width: auto;
             border-radius: 20px;
             border-color: rgb(127, 138, 255);
+            margin: 30px 2%;
+
             
             
             
@@ -99,6 +102,7 @@
             width: auto;
             border-radius: 20px;
             border-color: rgb(127, 138, 255);
+            margin: 30px 2%;
     }
     
     
@@ -111,18 +115,51 @@
 
 
     }
-        
-    @media (min-widh:800px){
-        body{
-            background-color: #ff0000;
+    .navv{
+            background-color: rgb(127, 138, 255);
+            padding: 5px;
+            margin-top: 0px;
+            margin-bottom: 50px;
         }
-    }
+
+        .navv a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            
+
+        }
+
+        .navv li{
+            list-style-type: none;
+            display: inline-block;
+            font-size: 15px;
+            font-family: 'Zen Dots', sans-serif;
+            
+            
+
+        }
+        nav li :hover{
+            background-color: rgba(95, 71, 254, 0.51);
+        }
+        
+  
         
     </style>
 </head>
+
 <body>
+    <nav class="navv">
+        <ul class="animate__animated animate__fadeInBottomLeft">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">¿Quienes somos?</a></li>
+            <li><a href="">Contacto</a></li>
+            <br>
+        </ul>
+    </nav>
+
     <div class="camilo">
-    <h1 class="animate__animated animate__zoomIn">Sotware review</h1></div>
+    <h1 class="animate__animated animate__zoomIn">Sotware review</h1>
+    </div>
     <div class="borde">
      
     
@@ -143,7 +180,7 @@
 
 </ul>
 </div>
-<hr>
+
 
 <!----------------TALLERES-->
 <div class="hernandez">
