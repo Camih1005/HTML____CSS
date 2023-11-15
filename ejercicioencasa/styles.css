@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&family=Amaranth:ital,wght@1,700&family=Fugaz+One&family=Kaushan+Script&family=Lato:wght@100&family=Zen+Dots&display=swap');
+body {
+    font-family: 'Alegreya', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 0, 149)de fondo general */
+    color: #4d4d4d; /* Color de texto general */
+}
+
+.header-container h1 a{
+    border-style: double;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: aliceblue;
+    color: #ffffff;
+    text-decoration: none;
+}
+.header-container h1:hover{
+    transform: scale(1.1);
+} 
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ec80ff; /* Color de fondo del encabezado */
+    color: #313131; /* Color de texto del encabezado */
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #457b9d; /* Cambio de color al pasar el ratón */
+}
+
+.hero {
+    background-image: url(../Imagenes/Fisioestetica-instema-25.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin: auto;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services,
+.about-us,
+.aparatologia,
+.additional-info,
+.contact {
+    background-color: #f6d4f6; /* Color de fondo de las secciones */
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+
+.service,
+.aparatologia-item {
+    background-image: url(../Imagenes/tratamiento-radiofrecuencia-corporal_1588x630.webp);
+    background-color: blue;
+    background-size: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.9s ease;
+    width: 80%;
+    margin: 0 auto; /* Centrar el ítem */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.service:hover,
+.aparatologia-item:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(rgba(205, 107, 251, 0.5), rgba(193, 111, 243, 0.5)), url("../Imagenes/tratamiento-radiofrecuencia-corporal_1588x630.webp");
+}
+
+.service::after,
+.aparatologia-item::after {
+    content: "Consulta nuestro equipo para obtener más detalles";
+    display: block;
+    text-align: center;
+    color: #86459d; /* Color del texto después del hover */
+}
+
+.about-us,
+.additional-info {
+    text-align: center;
+}
+
+.about-us h2,
+.aparatologia h2,
+.additional-info h2,
+.contact h2 {
+    color: #86459d; /* Color del título */
+}
+
+.contact address {
+    margin-top: px;
+}
+
+footer {
+    background-color: #d0a8dc; /* Color de fondo del pie de página */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+footer:hover {
+    transition: background-color 0.5s ease;
+    background-color: #e3f4fe; /* Cambio de color al pasar el ratón */
+}
+
+.titulo {
+    text-align: center;
+}
+
+.service h3{
+    filter: blur();
+}
