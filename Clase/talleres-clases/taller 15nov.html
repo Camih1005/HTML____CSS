@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            padding: 10px;
+            margin: auto;
+            width: 57%;
+            height: 200px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:space-around;
+            
+            
+        }
+        #izq{
+            border: solid 1px rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+
+            
+        }
+        #centro{
+            border: solid 1px black;
+            display: flex;
+            flex-direction: column;
+
+        }
+        #der{
+            border: solid 1px black;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .dentro{
+            
+            width: 145px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content:center ;
+            border: solid   1px black;
+            background-color: black;
+            color: white;
+
+
+
+        
+            
+        }
+        .mas{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            margin: 5px;
+            
+        
+        }
+        .pie {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            border: solid 1px rgb(95, 95, 95);
+            background-color: rgb(114, 114, 114);
+            color: white;
+        }
+
+        .principal{
+            border: solid 1px black;
+
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <section class="container">
+        <div id="izq">
+            <div class="dentro">tarjeta izquiera</div>
+            <div class="mas">
+                <p>contenido del cuerpo</p>
+                <p>contenido del cuerpo</p>
+                <p>contenido del cuerpo</p>
+            </div>
+            <footer class="pie">Pie</footer>
+        </div>
+        <div id="centro">
+            <div class="dentro">tarjeta centro</div>
+            <div class="mas">contenido del cuerpo</div>
+            <footer class="pie">Pie</footer>
+        </div>
+        <div id="der">
+            <div class="dentro">tarjeta derecha</div>
+            <div class="mas">contenido del cuerpo</div>
+            <footer class="pie">Pie</footer>
+        </div>
+
+    </section>
+    
+        
+    
+    
+</body>
+</html>
