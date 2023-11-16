@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+        background-color: rgb(255, 255, 255);
+            padding: 10px;
+            display: grid;
+
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            gap: 20px;
+            grid-template-columns: auto auto auto;
+            }
+            .grid-item{
+                background-color: rgba(255, 255, 255, 0.5);
+            border: 1px solid black;
+            padding: 2px;
+            font-size: 30px;
+            text-align: center;
+            width: 100%;
+            height: 300px;
+            
+            }
+            .item1{
+                background-color: orangered;
+            }
+            .item2{
+                background-color: rgb(1, 75, 33);
+            }
+            .item3{
+                background-color: brown;
+
+            }
+            .mama{
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            display: grid;
+            gap: 5px;
+            width: 80%;
+            height: 500px;
+            margin: 0 auto;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            
+            
+            }
+            
+            .grid-itemn{
+            background-color: rgb(255, 94, 0);
+            padding: 45px;
+            
+            
+            }
+            .item01{
+                grid-row-start:1;
+                grid-row-end: 1;
+                
+            
+            }
+            .item03{
+                grid-row-start:1;
+                grid-row-end: 1;
+                
+            }
+            .item02{
+                grid-row-start:1;
+                grid-row-end: 3;
+                
+            }
+            .item4{
+                grid-row-start:2;
+                grid-row-end: 4;
+                
+            }
+            .item5{
+                grid-row-start:2;
+                grid-row-end: 4;
+                
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">it1</div>
+        <div class="grid-item item2">it2</div>
+        <div class="grid-item item3">it3</div>
+        
+    </div>
+    <div class="mama">
+        <div class="grid-itemn item01">it1</div>
+        <div class="grid-itemn item02">it2</div>
+        <div class="grid-itemn item03">it3</div>
+        <div class="grid-itemn item4">it4</div>
+        <div class="grid-itemn item5">it5</div>
+        <div class="grid-itemn item6">it6</div>
+        
+    </div>
+    <div class="mama">
+        <div class="grid-itemn item01">it1</div>
+        <div class="grid-itemn item02">it2</div>
+        <div class="grid-itemn item03">it3</div>
+        <div class="grid-itemn item4">it4</div>
+        <div class="grid-itemn item5">it5</div>
+        <div class="grid-itemn item6">it6</div>
+        
+    </div>
+</body>
+</html
