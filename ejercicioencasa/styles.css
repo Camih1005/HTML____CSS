@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 0, 149)de fondo general */
-    color: #4d4d4d; /* Color de texto general */
+    background-color: rgb(255, 0, 149);
+    color: #4d4d4d;
 }
 
 .header-container h1 a{
@@ -24,8 +24,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ec80ff; /* Color de fondo del encabezado */
-    color: #313131; /* Color de texto del encabezado */
+    background-color: #ec80ff; 
+    color: #313131; 
     padding: 20px;
 }
 
@@ -48,7 +48,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #457b9d; /* Cambio de color al pasar el ratón */
+    color: #457b9d;
 }
 
 .hero {
@@ -71,7 +71,7 @@ header nav a:hover {
 .aparatologia,
 .additional-info,
 .contact {
-    background-color: #f6d4f6; /* Color de fondo de las secciones */
+    background-color: #f6d4f6; 
     padding: 50px 0;
     margin-bottom: 20px;
 }
@@ -88,15 +88,15 @@ header nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.9s ease;
     width: 80%;
-    margin: 0 auto; /* Centrar el ítem */
+    margin: 0 auto; 
     margin-bottom: 10px;
     text-align: center;
 }
 
 .service:hover,
-.aparatologia-item:hover {
+.aparatologia-item:hover:not(h3,p){
     transform: scale(1.05);
-    background-image: linear-gradient(rgba(205, 107, 251, 0.5), rgba(193, 111, 243, 0.5)), url("../Imagenes/tratamiento-radiofrecuencia-corporal_1588x630.webp");
+    
 }
 
 .service::after,
@@ -104,7 +104,7 @@ header nav a:hover {
     content: "Consulta nuestro equipo para obtener más detalles";
     display: block;
     text-align: center;
-    color: #86459d; /* Color del texto después del hover */
+    color: #86459d; 
 }
 
 .about-us,
@@ -112,19 +112,12 @@ header nav a:hover {
     text-align: center;
 }
 
-.about-us h2,
-.aparatologia h2,
-.additional-info h2,
-.contact h2 {
-    color: #86459d; /* Color del título */
-}
-
 .contact address {
     margin-top: px;
 }
 
 footer {
-    background-color: #d0a8dc; /* Color de fondo del pie de página */
+    background-color: #d0a8dc; 
     color: #ffffff;
     text-align: center;
     padding: 10px;
@@ -136,7 +129,7 @@ footer {
 
 footer:hover {
     transition: background-color 0.5s ease;
-    background-color: #e3f4fe; /* Cambio de color al pasar el ratón */
+    background-color: #e3f4fe; 
 }
 
 .titulo {
