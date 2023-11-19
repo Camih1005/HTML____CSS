@@ -6,53 +6,157 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>GAMLION</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&family=Amaranth:ital,wght@1,700&family=Fugaz+One&family=Kaushan+Script&family=Lato:wght@100&family=Zen+Dots&display=swap');
         body {
             background-color: #252525;
-            margin: 10px; 
-            padding: 20;
+
+            font-family: 'Zen Dots', sans-serif;
+            background-repeat: no-repeat;
         }
 
-        @media (max-width: 480px) {
-            .encabezado {
-                background-color: rgb(10, 10, 10);
-                border: solid 1px white;
-                padding: 10px;
+        @media (min-width:1024px) {
+            .iml{
+                background: url(../proyecto/imagenesproyecto/fondoprincipal.png) no-repeat center center;
+                background-size: cover;
+                height: 120vh;
                 width: 100%;
-                height: 100px;
+                background-image: 
+                
+
+
+            }
+            .imagenprincipal{
+                background-image: url(../proyecto/imagenesproyecto/fondoprincipal.png);
+            }
+            .encabezado {
+                margin: 20px;
+                background-color: transparent;
+                border: solid 2px;
+                border-color: transparent transparent gray transparent;
+                margin-left: 30px;
+                
+                width: 95%;
+                height: 120px;
                 display: grid;
-                grid-template-columns: auto auto;
+                grid-template-columns: repeat(7,1fr) ;
+                grid-template-rows: 1fr;
                 justify-content: center;
                 align-items: center;
+                column-gap: 10px;
+                align-items: center; 
+                 position: fixed;
+                          
             }
 
-            .logo {
+
+            .encabezado .lista a{
+                
+                color: rgb(164, 164, 164);
+                text-decoration: none;
+                border: solid black 1px;
+                margin: 5px;  
+                
+                            
+            }
+           
+            
+            .item1 img{
                 width: 100px;
-                margin-right: 20px;
-            }
+                height: 100px;
+                margin-left: 10px;
+                
+                
 
-            .emomenu {
-                width: 40px;
-                height: 40px;
-                bottom: 20px;
-                border: solid 1px grey;
-                border-radius: 10px;
-                padding: 3px;
-                transition: background-color 0.5s;
-                margin: 5px;
             }
+            .item2{
+                width: 550px;
+            }
+            .grid a{
+                padding: 0px;
+                margin: 0px;
+                text-decoration: none;
+                color: rgb(192, 192, 192);
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+            }
+            .item3{
+                padding: 0px;
+                
+            }
+            .item5{
+                width: auto;
+                padding: auto;
+            }
+            .item4{
+                padding: 0px;
+                width: auto;
+            }
+            
+            .grid a:hover{
+                color: #ffffff;
+                text-shadow:
+                0 0 7px #fff,
+                 0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(255, 0, 0),
+                0 0 82px rgb(255, 0, 0),
+                0 0 92px rgb(255, 0, 0),
+                0 0 102px rgb(255, 0, 0),
+                 0 0 151px rgb(255, 0, 0);
+            }
+            
+            .segundop img{
 
-            .emomenu:hover {
-                background-color: rgb(163, 163, 163, 0.4);
+              height: 120vh;
+                width: 100%
+                            
+
+            }
+            @keyframes show{
+                from{
+                    opacity: 0;
+                    scale: 25%;
+                }
+                to{
+                    opacity: 1;
+                    scale: 100%
+                }
+
+            }
+            img{
+                view-timeline-name: --image;
+                view-timeline-axis: block;
+
+                animation-timeline: --image;
+                animation-name: show;
+                animation-range: entry 25% cover 50%;
             }
         }
+            
+        
     </style>
 </head>
 <body>
+    
+        <section class="iml">
+
+        
     <header class="encabezado">
-        <div>
-            <img class="logo men1 animate__animated animate__backInRight" src="../proyecto/imagenesproyecto/GAMLION.png" alt="">
-            <a href=""><img class="emomenu men2" src="../proyecto/imagenesproyecto/logoblanco.png" alt=""></a>
-        </div>
-    </header>
+        <div class="grid item1"><a href=""><img src="../proyecto/imagenesproyecto/GAMLION.png" alt=""></a>
+            </div>
+        <div class="grid item2"><a href=""></a></div>
+        <div class="grid item3"><a href="">Inicio</a></div>
+        <div class="grid item4"><a href="">Productos</a></div>
+        <div class="grid item5"><a href="">Puntos de venta</a></div>
+        <div class="grid item6"><a href="">Comunidad</a></div>
+        <div class="grid item7"><a href="">Asesor</a></div>
+     </header>
+    </section>
+    <section class="segundop">
+        <div><img src="../proyecto/imagenesproyecto/tecladosegundop.png" alt=""></div>
+    </section>
+
+    
 </body>
 </html>
