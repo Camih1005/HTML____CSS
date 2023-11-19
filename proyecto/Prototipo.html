@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>GAMLION</title>
     <style>
         body{
@@ -31,14 +35,14 @@
         }
         .encabezado .logo{
             width: 100px;
-            margin-right: 280px;
+            margin-right: 200px;
            
             
 
 
             
         }
-        .emomenu{
+        .emomenu {
         width: 40px;
         height: 40px;
         position: relative;
@@ -46,11 +50,15 @@
         border: solid 1px grey;
         border-radius: 10px;
         padding: 3px;
+        transition: background-color 0.5s;
+        
+        
         
             
     }
     .emomenu:hover{
-         
+        background-color: rgb(163, 163, 163,0.4);
+        
     }
     }
     </style>
@@ -58,9 +66,9 @@
 <body>
     <main class="encabezado">
         <div>
-        <img class="logo men1" src="../proyecto/imagenesproyecto/GAMLION.png" alt="">
+        <img class="logo men1 animate__animated animate__backInRight" src="../proyecto/imagenesproyecto/GAMLION.png" alt="">
 
-        <img class="emomenu men2" src="../proyecto/imagenesproyecto/logoblanco.png" alt=""></div>
+       <a href=""><img  class="emomenu men2 "  src="../proyecto/imagenesproyecto/logoblanco.png" alt=""> </a> </div>
     </div>
 
     </main>
