@@ -3,75 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>GAMLION</title>
     <style>
-        body{
+        body {
             background-color: #252525;
-        
+            margin: 10px; 
+            padding: 20;
         }
-        @media (max-width:480px){
-            
-        
-        .encabezado{
-            margin: auto;
-            background-color: transparent;
-            border: solid 1px white;
-            padding: 10px;
-            width: 100%;
-            height: 100px;
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto;
-            justify-content: center;
-            align-items: center;
-            
 
-            
+        @media (max-width: 480px) {
+            .encabezado {
+                background-color: rgb(10, 10, 10);
+                border: solid 1px white;
+                padding: 10px;
+                width: 100%;
+                height: 100px;
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo {
+                width: 100px;
+                margin-right: 20px;
+            }
+
+            .emomenu {
+                width: 40px;
+                height: 40px;
+                bottom: 20px;
+                border: solid 1px grey;
+                border-radius: 10px;
+                padding: 3px;
+                transition: background-color 0.5s;
+                margin: 5px;
+            }
+
+            .emomenu:hover {
+                background-color: rgb(163, 163, 163, 0.4);
+            }
         }
-        .encabezado .logo{
-            width: 100px;
-            margin-right: 200px;
-           
-            
-
-
-            
-        }
-        .emomenu {
-        width: 40px;
-        height: 40px;
-        bottom: 20px;
-        border: solid 1px grey;
-        border-radius: 10px;
-        padding: 3px;
-        transition: background-color 0.5s;
-        margin: 5px;
-        
-        
-        
-            
-    }
-    .emomenu:hover{
-        background-color: rgb(163, 163, 163,0.4);
-        
-    }
-    }
     </style>
 </head>
 <body>
-    <main class="encabezado">
+    <header class="encabezado">
         <div>
-        <img class="logo men1 animate__animated animate__backInRight" src="../proyecto/imagenesproyecto/GAMLION.png" alt="">
-
-       <a href=""><img  class="emomenu men2 "  src="../proyecto/imagenesproyecto/logoblanco.png" alt=""> </a>
-     </div>
-    
-
-    </main>
-    
+            <img class="logo men1 animate__animated animate__backInRight" src="../proyecto/imagenesproyecto/GAMLION.png" alt="">
+            <a href=""><img class="emomenu men2" src="../proyecto/imagenesproyecto/logoblanco.png" alt=""></a>
+        </div>
+    </header>
 </body>
 </html>
