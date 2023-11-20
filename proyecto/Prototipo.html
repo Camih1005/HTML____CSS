@@ -460,6 +460,15 @@
                 animation-range: entry 25% cover 50%;
                 animation-fill-mode: both;
             }
+            .footer1{
+                view-timeline-name: --image;
+                view-timeline-axis: block;
+
+                animation-timeline: --image;
+                animation-name: show;
+                animation-range: entry 25% cover 50%;
+                animation-fill-mode: both;
+            }
             
 
             
@@ -546,6 +555,7 @@
             grid-template-columns: 3,1fr;
             color: white;
             font-size: 20px;
+            margin-bottom: 8%;
             
         }
         .gr{
@@ -684,6 +694,64 @@
             outline: none;
             animation: slide 2 s infinite;
         }
+        .footer1{
+          display: grid;
+          grid-template-columns: 1f;
+          width: 90%;
+          height: 400px; 
+          border: solid 1px transparent;
+          margin: 100px auto;
+          background:linear-gradient(to bottom, transparent, rgb(9, 9, 9)), url(../proyecto/imagenesproyecto/WEB-Set-up-gamer-aprende-como-construirlo-y-elegirlo-desde-cero.jpg) no-repeat center center;
+          background-repeat: no-repeat;
+          background-size:  100%;
+          padding: 20px;
+          
+          }
+          .ultimotitulo{
+            font-size: 30px;
+            text-align: left;
+          }
+          .formulario{
+            text-decoration: none;
+            
+
+          }
+          label{
+            color: #ffffff;
+            list-style-type: none;
+          }
+          input{
+            width: 40px;
+            border-radius: 20px;
+            border: none;
+            transition-duration: 1s;
+            cursor:text;
+            background-color: rgb(115,150,255,0.3);
+            
+          }
+          input:placeholder-shown{
+            border-color: teal;
+            color: rgb(64, 67, 255,0.3);
+            font-family: 'Zen Dots', sans-serif;
+          }
+          .final p{
+            font-size: 20px;
+          }
+          .for{
+            width: 50%;
+            height: 300px;
+            border: solid 1px white;;
+            transition-property: border;
+            
+          }
+          input:hover{
+            width: 170px;
+            height: 20px;
+            
+          }
+            
+          
+        
         
     </style>
 </head>
@@ -737,15 +805,31 @@
         </div>
 
     </section>
-    <section class="container4 animate__animated animate__backInDown">
-        <div class="item-1 gr"><a href="">Barra de sonido LionSound</a><div class="itemm-1"><img src="../proyecto/imagenesproyecto/DARKNET.png" alt=""><p>La nueva LionSound es una barra de sonido estéreo compacta y súper potente.</p></div>
+    <footer class="footer1 animate__animated animate__backInDown">
+        <div class="foot1 final">
+            <h1 class="ultimotitulo">¿QUIERES ESTAR AL TANTO DE NUESTROS PRODUCTOS?</h1>
+            <div class="for"><p>Ponte al dia con nosotros, deja tus datos y te estaremos enviando noticias y productos nuevos y con descuentos!!</p>
+            <form class="formulario">
+                <ul>
+                  <li>
+                    <label for="name">Nombre</label>
+                    <br>
+                    <input type="text" id="name" name="user_name" placeholder="Nombre completo" />
+                  </li>
+                  <br><br>
+                  <li>
+                    <label for="mail">Correo electrónico:</label>
+                    <br>
+                    <input type="email" id="mail" name="user_mail" placeholder="Correo Electronico" />
+                  </li>
+                 
+                </ul>
+              </form>
             </div>
-            <div class="item-2 gr"><a href="">Teclado LionPlus</a><div class="itemm-2"><img src="../proyecto/imagenesproyecto/teladodescuento.png" alt=""><p>Teclado Alambrico <br> Mecanico Plano 80%</p></div>
         </div>
-        <div class="item-3 gr"><a href="">Combo LionPlus 378A</a><div class="itemm-3"><img src="../proyecto/imagenesproyecto/combo.3.png" alt=""><p>Combo Alambrico Ultra White</p></div>
-        </div>
+            
 
-    </section>
+    </footer>
 
 
 
