@@ -8,7 +8,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&family=Amaranth:ital,wght@1,700&family=Fugaz+One&family=Kaushan+Script&family=Lato:wght@100&family=Zen+Dots&display=swap');
         body {
-            background-color: #252525;
+            background-color: rgb(9,9,9);
 
             font-family: 'Zen Dots', sans-serif;
             background-repeat: no-repeat;
@@ -16,17 +16,17 @@
 
         @media (min-width:1024px) {
             .iml{
-                background: url(../proyecto/imagenesproyecto/fondoprincipal.png) no-repeat center center;
+                background:linear-gradient(to bottom, transparent, rgb(9, 9, 9)), url(../proyecto/imagenesproyecto/fondoprincipal.png) no-repeat center center;
                 background-size: cover;
                 height: 120vh;
                 width: 100%;
-                background-image: 
+                background: 
                 
 
 
             }
             .imagenprincipal{
-                background-image: url(../proyecto/imagenesproyecto/fondoprincipal.png);
+                background-image:linear-gradient(transparent,) url(../proyecto/imagenesproyecto/fondoprincipal.png);
             }
             .encabezado {
                 margin: 20px;
@@ -44,7 +44,7 @@
                 align-items: center;
                 column-gap: 10px;
                 align-items: center; 
-                 position: fixed;
+                 
                           
             }
 
@@ -96,20 +96,310 @@
             .grid a:hover{
                 color: #ffffff;
                 text-shadow:
-                0 0 7px #fff,
-                 0 0 10px #fff,
-                0 0 21px #fff,
-                0 0 42px rgb(255, 0, 0),
-                0 0 82px rgb(255, 0, 0),
-                0 0 92px rgb(255, 0, 0),
-                0 0 102px rgb(255, 0, 0),
-                 0 0 151px rgb(255, 0, 0);
+                0 0 7px #8c8c8c,
+                 0 0 10px #474747,
+                0 0 21px #888888,
+                0 0 82px rgb(255, 255, 255),
+                0 0 92px rgb(255, 255, 255),
+                 0 0 151px rgb(255, 255, 255);
             }
             
             .segundop img{
 
-              height: 120vh;
-                width: 100%
+              height: 100%;
+                width: 100%;
+                filter: drop-shadow(100);
+            }
+            .container2{
+
+                background-color: transparent;
+                
+                margin-left:5%;
+                width: 95%;
+                height: 350px;
+                display: grid;
+                grid-template-columns: repeat(5,1fr) ;
+                grid-template-rows: 1fr;
+                justify-content: center;
+                align-items: center;
+                column-gap: 10px;
+                align-items: center; 
+                
+                
+            }
+            .container2 a:hover{
+                background: 100px;
+
+            }
+            .grid2 a{
+                color: #fff;
+                text-decoration: none;
+                
+            }
+            .item01{
+                
+                background: url(../proyecto/imagenesproyecto/Megamenu-Teclados-1500x1182-1.jpg)no-repeat center center;
+               
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content:center ;
+                align-items: flex-end;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                transition-property: all;
+                transition-duration: 1s;
+                
+                
+            }
+            .item01:hover{
+                width: 350px;
+            
+            color: rgb(255, 255, 255);
+            border: 1px solid transparent;
+            transition-property: all;
+            transition-duration: 0.5s;
+            }
+            
+            .item02{
+                background: url(../proyecto/imagenesproyecto/maousemarca.png)no-repeat center center;
+               
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content:center ;
+                align-items: flex-end;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                transition-property: all;
+                transition-duration: 1s;
+                
+            }
+            .item02:hover{
+                width: 350px;
+            
+            color: rgb(255, 255, 255);
+            border: 1px solid transparent;
+            transition-property: all;
+            transition-duration: 0.5s;
+            
+            }
+            .item03{
+                background: url(../proyecto/imagenesproyecto/audio.png)no-repeat center center;
+               
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content:center ;
+                align-items: flex-end;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                transition-property: all;
+                transition-duration: 1s;
+            }
+            .item03:hover{
+                width: 350px;
+            
+            color: rgb(255, 255, 255);
+            border: 1px solid transparent;
+            transition-property: all;
+            transition-duration: 0.5s;
+            }
+            .item04{
+                background: url(../proyecto/imagenesproyecto/camaralogo.png)no-repeat center center;
+               
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content:center ;
+                align-items: flex-end;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                transition-property: all;
+                transition-duration: 1s;
+            }
+            .item04:hover{
+                width:350px;
+            
+            color: rgb(255, 255, 255);
+            border: 1px solid transparent;
+            transition-property: all;
+            transition-duration: 0.5s;
+            }
+            .item05{
+                background: url(../proyecto/imagenesproyecto/camaralogo.png)no-repeat center center;
+               
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content:center ;
+                align-items: flex-end;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                transition-property: all;
+                transition-duration: 1s;
+            }
+            .item05:hover{
+            width: 350px;
+            
+            color: rgb(255, 255, 255);
+            border: 1px solid transparent;
+            transition-property: all;
+            transition-duration: 0.5s;
+            }
+.container3{
+
+background-color: transparent;
+
+margin-left:5%;
+width: 95%;
+height: 350px;
+display: grid;
+grid-template-columns: repeat(5,1fr) ;
+grid-template-rows: 1fr;
+justify-content: center;
+align-items: center;
+column-gap: 10px;
+align-items: center; 
+
+
+}
+.container3 a:hover{
+background: 100px;
+
+}
+.grid2 a{
+color: #fff;
+text-decoration: none;
+
+}
+.item001{
+
+background: url(../proyecto/imagenesproyecto/DIADEMABLANCA.png)no-repeat center center;
+
+width: 300px;
+height: 300px;
+display: flex;
+justify-content:center ;
+align-items: flex-end;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+transition-property: all;
+transition-duration: 1s;
+
+
+}
+.item001:hover{
+width: 350px;
+
+color: rgb(255, 255, 255);
+border: 1px solid transparent;
+transition-property: all;
+transition-duration: 0.5s;
+cursor: pointer;
+}
+
+.item002{
+background: url(../proyecto/imagenesproyecto/COBRA-W.png)no-repeat center center;
+
+width: 300px;
+height: 300px;
+display: flex;
+justify-content:center ;
+align-items: flex-end;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+transition-property: all;
+transition-duration: 1s;
+
+}
+.item002:hover{
+width: 350px;
+
+color: rgb(255, 255, 255);
+border: 1px solid transparent;
+transition-property: all;
+transition-duration: 0.5s;
+cursor: pointer;
+
+}
+.item003{
+background: url(../proyecto/imagenesproyecto/HORUS-WHITE-FULL.png)no-repeat center center;
+
+width: 300px;
+height: 300px;
+display: flex;
+justify-content:center ;
+align-items: flex-end;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+transition-property: all;
+transition-duration: 1s;
+}
+.item003:hover{
+width: 350px;
+
+color: rgb(255, 255, 255);
+border: 1px solid transparent;
+transition-property: all;
+transition-duration: 0.5s;
+cursor: pointer;
+}
+.item004{
+background: url(../proyecto/imagenesproyecto/TECLAS.png)no-repeat center center;
+
+width: 300px;
+height: 300px;
+display: flex;
+justify-content:center ;
+align-items: flex-end;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+transition-property: all;
+transition-duration: 1s;
+
+}
+.item004:hover{
+width:350px;
+
+color: rgb(255, 255, 255);
+border: 1px solid transparent;
+transition-property: all;
+transition-duration: 0.5s;
+cursor: pointer;
+}
+.item005{
+background: url(../proyecto/imagenesproyecto/TECLAS.png)no-repeat center center;
+
+width: 300px;
+height: 300px;
+display: flex;
+justify-content:center ;
+align-items: flex-end;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+transition-property: all;
+transition-duration: 1s;
+cursor:cell;
+}
+.item005:hover{
+width: 350px;
+
+color: rgb(255, 255, 255);
+border: 1px solid transparent;
+transition-property: all;
+transition-duration: 0.5s;
+}
                             
 
             }
@@ -130,9 +420,276 @@
 
                 animation-timeline: --image;
                 animation-name: show;
-                animation-range: entry 25% cover 50%;
+                animation-range: entry 50% cover 50%;
+                animation-fill-mode: both;
             }
+            .container4{
+                view-timeline-name: --image;
+                view-timeline-axis: block;
+
+                animation-timeline: --image;
+                animation-name: show;
+                animation-range: entry 25% cover 50%;
+                animation-fill-mode: both;
+            }
+            .container2{
+                view-timeline-name: --image;
+                view-timeline-axis: block;
+
+                animation-timeline: --image;
+                animation-name: show;
+                animation-range: entry 25% cover 50%;
+                animation-fill-mode: both;
+            }.container3{
+                view-timeline-name: --image;
+                view-timeline-axis: block;
+
+                animation-timeline: --image;
+                animation-name: show;
+                animation-range: entry 25% cover 50%;
+                animation-fill-mode: both;
+            }
+            h1{
+                view-timeline-name: --image;
+                view-timeline-axis: block;
+
+                animation-timeline: --image;
+                animation-name: show;
+                animation-range: entry 25% cover 50%;
+                animation-fill-mode: both;
+            }
+            p{
+                view-timeline-name: --image;
+                view-timeline-axis: block;
+
+                animation-timeline: --image;
+                animation-name: show;
+                animation-range: entry 25% cover 50%;
+                animation-fill-mode: both;
+            }
+            a{
+                view-timeline-name: --image;
+                view-timeline-axis: block;
+
+                animation-timeline: --image;
+                animation-name: show;
+                animation-range: entry 25% cover 50%;
+                animation-fill-mode: both;
+            }
+        .titulop{
+            text-align: center;
+            color:rgb(255, 255, 255) ;
         }
+        #div1{
+            margin: 2px;
+            width: 20px;
+            height: 20px;
+            background-color: #2B4C85;
+            border-radius: 50%;
+            
+        }
+        #div2{
+            margin: 2px;
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            display: grid;
+            border-radius: 50%;
+           
+            
+        }
+        #raton{
+            margin: 2px;
+            width: 20px;
+            height: 20px;
+            background-color: #0e0e0e;
+            border-radius: 50%; 
+            border: solid 1px white;
+        }
+        #raton2{
+            margin: 2px;
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            display: grid;
+            border-radius: 50%;  
+        }
+        #teclado1{
+            margin: 2px;
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            display: grid;
+            border-radius: 50%;  
+        }
+        #teclado2{
+            margin: 2px;
+            width: 20px;
+            height: 20px;
+            background-color: #050505;
+            display: grid;
+            border-radius: 50%;  
+            border: solid rgb(255, 255, 255) 1px;
+        }
+        #teclas1{
+            margin: 2px;
+            width: 20px;
+            height: 20px;
+            background: rgb(115,150,255);
+            background: linear-gradient(90deg, rgba(115,150,255,1) 48%, rgba(255,255,255,1) 48%);
+            display: grid;
+            border-radius: 50%;  
+        }
+        #teclas2{
+            margin: 2px;
+            width: 20px;
+            height: 20px;
+            background: rgb(255,136,229);
+            background: linear-gradient(90deg, rgba(255,136,229,1) 48%, rgba(255,255,255,1) 48%);
+            display: grid;
+            border-radius: 50%;  
+        }
+        .container4{
+            padding: 10px;
+            width: 90%;
+            height: 500px;
+            gap: 20px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 3,1fr;
+            color: white;
+            font-size: 20px;
+            
+        }
+        .gr{
+            
+            width: auto;
+            text-align: center;
+            
+        }
+        .gr a{
+            position: relative;
+            top: 30px;
+        }
+            
+        
+        .item-1{
+           grid-column: 1/2; 
+           width: 400px;
+           background: linear-gradient(black,rgb(39, 39, 39),black);
+           transition-property: all;
+            transition-duration: 1s;
+            cursor:pointer;
+           
+           
+           
+           
+        }
+        .item-1:hover{
+            width: 450px;
+            border: 1px solid transparent;
+            transition-property: all;
+            transition-duration: 0.5s;
+
+        }
+        .item-1 a{
+            text-decoration: none;
+            
+            color: #fff;
+        }
+        
+        .itemm-1 img{
+            width: 300px;
+            position: relative;
+            top: 170px;
+
+            
+            
+        }
+        .item-2{
+            grid-column: 2/3;
+           background: linear-gradient(black,rgb(39, 39, 39),black);
+            
+           width: 400px;
+           background: linear-gradient(black,rgb(39, 39, 39),black);
+           transition-property: all;
+            transition-duration: 1s;
+            cursor:pointer;
+
+        }
+        .item-2:hover{
+            width: 450px;
+            border: 1px solid transparent;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        .itemm-2 img{
+            width: 300px;
+            position: relative;
+            top: 100px;
+        }
+        .item-2 a{
+            text-decoration: none;
+            color: white;
+            
+        }  
+        .itemm-2 p{
+            position: relative;
+            top: 200px;
+        }
+
+        .item-3{
+            grid-column: 3/4;
+            background: linear-gradient(black,rgb(39, 39, 39),black);
+            width: 400px;
+           background: linear-gradient(black,rgb(39, 39, 39),black);
+           transition-property: all;
+            transition-duration: 1s;
+            cursor:pointer;
+            
+        }
+        .item-3 a{
+            color: #fff;
+            margin-top: 50px;
+            text-decoration: none;
+        }
+        .itemm-3 img{
+            width: 300px;
+            position: relative;
+            top: 110px;
+        }
+        .itemm-3 p{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 200px;
+
+        }
+        .item-3:hover{
+            width: 450px;
+            border: 1px solid transparent;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        h1{
+            text-align: center;
+            color: #fff;
+            font-size: 50px;
+        }
+        .itemm-1 p{
+            position: relative;
+            top: 320px;
+        }
+        .segundop p{
+            text-align: center;
+            color: #bebebe;
+        }
+        .segundop p a{
+            text-align: center;
+            color: rgb(115,150,255);
+            text-decoration: none;
+        }
+
             
         
     </style>
@@ -142,7 +699,7 @@
         <section class="iml">
 
         
-    <header class="encabezado">
+    <header class="encabezado animate__animated animate__fadeInDown">
         <div class="grid item1"><a href=""><img src="../proyecto/imagenesproyecto/GAMLION.png" alt=""></a>
             </div>
         <div class="grid item2"><a href=""></a></div>
@@ -152,10 +709,39 @@
         <div class="grid item6"><a href="">Comunidad</a></div>
         <div class="grid item7"><a href="">Asesor</a></div>
      </header>
+     <h1 class="titulop">BIENVENIDO A GAMLION</h1>
+        <article class="container2 animate__animated animate__fadeInUp">
+        <div class="grid2 item01"><a href="">Teclados</a></div>
+        <div class="grid2 item02"><a href="">Ratones</a></div>
+        <div class="grid2 item03"><a href="">Audio</a></div>
+        <div class="grid2 item04"><a href="">Camaras</a></div>
+        
+    </article>
     </section>
     <section class="segundop">
-        <div><img src="../proyecto/imagenesproyecto/tecladosegundop.png" alt=""></div>
+        <h1>MEJORES ACABADOS</h1>
+        <p>Materiales reciclables y mas duraderos</p>
+        <p><a href="">Mas informacion ></a></p>
+        <article class="container3 animate__animated animate__fadeInUp">
+            <div class="grid2 item001"><a href="">Diademas &nbsp </a> <div id="div1"></div><div id="div2"></div></div>
+            <div class="grid2 item002"><a href="">Ratones &nbsp</a><div id="raton"></div><div id="raton2"></div></div></div>
+            <div class="grid2 item003"><a href="">Teclado &nbsp</a><div id="teclado1"></div><div id="teclado2"></div></div></div>
+            <div class="grid2 item004"><a href="">Teclas Mecanicas &nbsp</a><div id="teclas1"></div><div id="teclas2"></div></div></div>
+            
+        </article>
+        
     </section>
+    <h1>PRODUCTOS MAS VENDIDOS DEL MES</h1>
+    <section class="container4 animate__animated animate__backInDown">
+        <div class="item-1 gr"><a href="">Barra de sonido LionSound</a><div class="itemm-1"><img src="../proyecto/imagenesproyecto/DARKNET.png" alt=""><p>La nueva Darknets GS570 es una barra de sonido estéreo compacta y súper potente.</p></div>
+            </div>
+            <div class="item-2 gr"><a href="">Teclado LionPlus</a><div class="itemm-2"><img src="../proyecto/imagenesproyecto/teladodescuento.png" alt=""><p>Teclado Alambrico <br> Mecanico Plano 80%</p></div>
+        </div>
+        <div class="item-3 gr"><a href="">Combo LionPlus 378A</a><div class="itemm-3"><img src="../proyecto/imagenesproyecto/combo.3.png" alt=""><p>Combo Alambrico Ultra White</p></div>
+        </div>
+
+    </section>
+
 
     
 </body>
