@@ -7,12 +7,12 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (min-width: 480px) and (max-width: 769px) {
+@media (min-width: 480px)  {
   .iml {
     background: linear-gradient(to bottom, transparent, rgb(9, 9, 9)),
       url(../proyecto/imagenesproyecto/fondoprincipal.png) no-repeat center center;
     background-size: cover;
-    height: 120vh;
+    height: 1000px;
     width: 100%;
   }
 
@@ -35,7 +35,7 @@ body {
   nav {
     max-width: 900px;
     margin: auto;
-    background-color: transparent;
+    background-color: gray;
     font-size: 20px;
     margin-top: 10px;
     position: relative;
@@ -101,13 +101,10 @@ body {
   .item5,
   .item6,
   .item7,
-  .item2 {
+   {
     display: none;
   }
 
-  .encabezado img {
-    
-  }
   .nav img{
     background-color: rgba(12, 12, 12, 0.5);
     border-radius: 10px;
@@ -128,6 +125,8 @@ body {
     align-items: center;
     column-gap: 10px;
     align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr;
 
   }
 
@@ -138,38 +137,54 @@ body {
     margin: 5px;
   }
 
-  .item1 img {
+  .item1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+  }
+  .item1 img{
     width: 100px;
     height: 100px;
     margin-left: 10px;
   }
 
-  .item2 input {
+  .grid{
     color: #2b4c85;
+    position: relative;
+    display: grid;
+  
+    
+    
+  }
+  .item2{
+    grid-column: 2/3;
+    
+
+  }
+  .item2 input{
+    width: 100px;
+    height: 30px;
   }
 
   .grid a {
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-    color: rgb(214, 214, 214);
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+    color: rgb(255, 255, 255);
+    
   }
 
   .item3 {
-    padding: 0px;
+    grid-column: 3/4;
   }
 
   .item5 {
-    width: auto;
-    padding: auto;
+    
   }
 
   .item4 {
-    padding: 0px;
-    width: auto;
+    
+    
   }
 
   .grid a:hover {
@@ -187,18 +202,17 @@ body {
 
   .container2 {
     background-color: transparent;
-
-    width: 80%;
-    height: 350px;
+    width: 100%;
+    height: 750px;
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr, 1fr;
     justify-content: center;
     align-items: center;
-    column-gap: 5px;
     align-items: center;
     display: grid;
     margin: 0 auto;
+    column-gap: 30px;
   }
 
   .container2 a:hover {
@@ -214,17 +228,18 @@ body {
   .item01 {
     background: url(../proyecto/imagenesproyecto/Megamenu-Teclados-1500x1182-1.jpg) no-repeat center center;
     grid-column: 1/2;
-    width: 350px;
+    width: 300px;
     height: 350px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     transition-property: all;
     transition-duration: 1s;
+    margin: 0 auto;
   }
 
   .item01:hover {
-    width: 400px;
+    width: 350px;
 
     color: rgb(255, 255, 255);
     border: 1px solid transparent;
@@ -235,18 +250,18 @@ body {
   .item02 {
     background: url(../proyecto/imagenesproyecto/maousemarca.png) no-repeat center center;
     grid-column: 2/3;
-    width: 350px;
+    width: 300px;
     height: 350px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     transition-property: all;
     transition-duration: 1s;
+    margin: 0 auto;
   }
 
   .item02:hover {
-    width: 400px;
-
+    width: 350px;
     color: rgb(255, 255, 255);
     border: 1px solid transparent;
     transition-property: all;
@@ -255,8 +270,8 @@ body {
 
   .item03 {
     background: url(../proyecto/imagenesproyecto/audio.png) no-repeat center center;
-
-    width: 350px;
+    
+    width: 300px;
     height: 350px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -266,7 +281,7 @@ body {
   }
 
   .item03:hover {
-    width: 400px;
+    width: 350px;
 
     color: rgb(255, 255, 255);
     border: 1px solid transparent;
@@ -276,8 +291,9 @@ body {
 
   .item04 {
     background: url(../proyecto/imagenesproyecto/camaralogo.png) no-repeat center center;
-
-    width: 350px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 300px;
     height: 350px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -287,7 +303,7 @@ body {
   }
 
   .item04:hover {
-    width: 400px;
+    width: 350px;
 
     color: rgb(255, 255, 255);
     border: 1px solid transparent;
@@ -311,7 +327,7 @@ body {
   }
 
   .item05:hover {
-    width: 400px;
+    width: 380px;
 
     color: rgb(255, 255, 255);
     border: 1px solid transparent;
@@ -357,6 +373,7 @@ body {
     background-position: center;
     transition-property: all;
     transition-duration: 1s;
+    margin: 0 auto;
   }
 
   .item001:hover {
@@ -381,6 +398,7 @@ body {
     background-position: center;
     transition-property: all;
     transition-duration: 1s;
+    margin: 0 auto;
   }
 
   .item002:hover {
@@ -405,6 +423,7 @@ body {
     background-position: center;
     transition-property: all;
     transition-duration: 1s;
+    margin: 0 auto;
   }
 
   .item003:hover {
@@ -429,6 +448,7 @@ body {
     background-position: center;
     transition-property: all;
     transition-duration: 1s;
+    margin: 0 auto;
   }
 
   .item004:hover {
@@ -462,13 +482,14 @@ body {
     color: rgb(255, 255, 255);
     border: 1px solid transparent;
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
   }
   .producto{
     text-align: center;
     width: 700px;
     position: relative;
-    bottom: 1500px;
+    bottom: 100px;
+    margin: 0 auto;
   }
 
   .titulop {
@@ -759,13 +780,13 @@ body {
     text-decoration: none;
   }
 
-  label {
+  .formulario label {
     color: #ffffff;
 
     list-style-type: none;
   }
 
-  input {
+  .formulario input {
     height: 30px;
     width: 190px;
     border-radius: 20px;
@@ -776,7 +797,7 @@ body {
     color: #fff;
   }
 
-  input:placeholder-shown {
+  .formulario input:placeholder-shown {
     border-color: teal;
     color: rgb(235, 235, 235, 0.5);
     font-family: "Zen Dots", sans-serif;
@@ -796,7 +817,7 @@ body {
     color: #fff;
   }
 
-  input:hover {
+  .formulario input:hover {
     width: 200px;
     height: 35px;
   }
@@ -910,7 +931,6 @@ body {
 
   img,
   .container3,
-  .container4,
   h1,
   p,
   .footer1 {
@@ -1545,7 +1565,7 @@ body {
     border: solid 1px transparent;
     margin: 100px auto;
     background: linear-gradient(to bottom, transparent, rgb(9, 9, 9)),
-      url(../proyecto/imagenesproyecto/WEB-Set-up-gamer-aprende-como-construirlo-y-elegirlo-desde-cero.jpg) no-repeat center center;
+    url(../proyecto/imagenesproyecto/WEB-Set-up-gamer-aprende-como-construirlo-y-elegirlo-desde-cero.jpg) no-repeat center center;
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 20px;
