@@ -6,97 +6,113 @@ body {
   font-family: "Zen Dots", sans-serif;
   background-repeat: no-repeat;
 }
+
 @media (min-width: 480px) and (max-width: 769px) {
   .iml {
     background: linear-gradient(to bottom, transparent, rgb(9, 9, 9)),
-      url(../proyecto/imagenesproyecto/fondoprincipal.png) no-repeat center
-        center;
+      url(../proyecto/imagenesproyecto/fondoprincipal.png) no-repeat center center;
     background-size: cover;
     height: 120vh;
     width: 100%;
   }
-  .nav{
-    max-width: 900px;
+
+  .nav {
+    width: 0px;
     margin: auto;
-    background-color: #ffffff;
+    background-color: #c46060;
     font-size: 20px;
     margin-top: 100px;
 
   }
-  .imagenmenu{
-    width: 60px;
-    left: 90%;
-    top: 40px;
-    position: fixed;
+
+  .imagenmenu {
+    width: 20px;
+    left: 80%;
+    top: 10px;
+    
   }
-  nav{
-	max-width: 900px;
-	margin: auto;
-	background-color: transparent;
-	font-size: 20px;
-	margin-top: 10px;
-    position: fixed;
-    left: 55%;
-    top: 40px;
-    
 
-}
-.menu-horizontal{
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-}
-.menu-horizontal > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: white;
-	text-decoration: none;
+  nav {
+    max-width: 900px;
+    margin: auto;
+    background-color: transparent;
+    font-size: 20px;
+    margin-top: 10px;
+    position: relative;
+    left:500px;
+    top: -240px;
+
+
+  }
+
+  .menu-horizontal {
+    list-style: none;
     
-}
-.menu-horizontal > li:hover{
-	background-color: transparent;
-}
-.menu-vertical{
-	position: absolute;
-	display: none;
-	list-style: none;
-	width: 200px;
+  }
+
+  .menu-horizontal>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+  }
+
+  .menu-horizontal>li:hover {
+    background-color: transparent;
+  }
+
+  .menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
     height: 400px;
-	background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 6, 6, 0.5);
     z-index: 100;
+    right: -120px;
+
+  }
+
+  .menu-horizontal li:hover .menu-vertical {
+    display: block;
+  }
+
+  .menu-vertical li:hover {
+    background-color: rgb(29, 29, 29,0.5);
+    width: 100%;
     
-}
-.menu-horizontal li:hover .menu-vertical{
-	display: block;
-}
-.menu-vertical li:hover{
-	background-color: black;
-}
+  }
 
-.menu-vertical li a{
-	display: block;
-	color: white;
-	text-decoration: none;
-	padding: 15px 15px 15px 20px;
+  .menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+
+  }
+
+  .eliminar {
+    display: none;
+  }
+
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item2 {
+    display: none;
+  }
+
+  .encabezado img {
     
-}
-.eliminar{
-    display: none;
-}
-
-#html{
-	margin: auto;
-	padding: 20px;
-	max-width: 900px;
-	background: white;
-
-}
-.item3,.item4,.item5,.item6,.item7,.item2{
-    display: none;
-}
-.encabezado img{
-
-}
+  }
+  .nav img{
+    background-color: rgba(12, 12, 12, 0.5);
+    border-radius: 10px;
+    width: 60px;
+  }
 
 
   .encabezado {
@@ -107,12 +123,12 @@ body {
     margin-left: 30px;
     width: 95%;
     height: 120px;
-    display: grid; 
+    display: grid;
     justify-content: left;
     align-items: center;
     column-gap: 10px;
     align-items: center;
-    
+
   }
 
   .encabezado .lista a {
@@ -136,7 +152,7 @@ body {
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-    color: rgb(192, 192, 192);
+    color: rgb(214, 214, 214);
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -171,12 +187,12 @@ body {
 
   .container2 {
     background-color: transparent;
-    
+
     width: 80%;
     height: 350px;
     display: grid;
-    grid-template-columns: 1fr,1fr;
-    grid-template-rows: 1fr,1fr;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
     justify-content: center;
     align-items: center;
     column-gap: 5px;
@@ -190,14 +206,13 @@ body {
   }
 
   .grid2 a {
-    
+
     color: #fff;
     text-decoration: none;
   }
 
   .item01 {
-    background: url(../proyecto/imagenesproyecto/Megamenu-Teclados-1500x1182-1.jpg)
-      no-repeat center center;
+    background: url(../proyecto/imagenesproyecto/Megamenu-Teclados-1500x1182-1.jpg) no-repeat center center;
     grid-column: 1/2;
     width: 350px;
     height: 350px;
@@ -218,11 +233,10 @@ body {
   }
 
   .item02 {
-    background: url(../proyecto/imagenesproyecto/maousemarca.png) no-repeat
-      center center;
-      grid-column: 2/3;
-      width: 350px;
-      height: 350px;
+    background: url(../proyecto/imagenesproyecto/maousemarca.png) no-repeat center center;
+    grid-column: 2/3;
+    width: 350px;
+    height: 350px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -240,8 +254,7 @@ body {
   }
 
   .item03 {
-    background: url(../proyecto/imagenesproyecto/audio.png) no-repeat center
-      center;
+    background: url(../proyecto/imagenesproyecto/audio.png) no-repeat center center;
 
     width: 350px;
     height: 350px;
@@ -262,8 +275,7 @@ body {
   }
 
   .item04 {
-    background: url(../proyecto/imagenesproyecto/camaralogo.png) no-repeat
-      center center;
+    background: url(../proyecto/imagenesproyecto/camaralogo.png) no-repeat center center;
 
     width: 350px;
     height: 350px;
@@ -284,8 +296,7 @@ body {
   }
 
   .item05 {
-    background: url(../proyecto/imagenesproyecto/camaralogo.png) no-repeat
-      center center;
+    background: url(../proyecto/imagenesproyecto/camaralogo.png) no-repeat center center;
 
     width: 350px;
     height: 350px;
@@ -335,8 +346,7 @@ body {
   }
 
   .item001 {
-    background: url(../proyecto/imagenesproyecto/DIADEMABLANCA.png) no-repeat
-      center center;
+    background: url(../proyecto/imagenesproyecto/DIADEMABLANCA.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -361,8 +371,7 @@ body {
   }
 
   .item002 {
-    background: url(../proyecto/imagenesproyecto/COBRA-W.png) no-repeat center
-      center;
+    background: url(../proyecto/imagenesproyecto/COBRA-W.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -387,8 +396,7 @@ body {
   }
 
   .item003 {
-    background: url(../proyecto/imagenesproyecto/HORUS-WHITE-FULL.png) no-repeat
-      center center;
+    background: url(../proyecto/imagenesproyecto/HORUS-WHITE-FULL.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -413,8 +421,7 @@ body {
   }
 
   .item004 {
-    background: url(../proyecto/imagenesproyecto/TECLAS.png) no-repeat center
-      center;
+    background: url(../proyecto/imagenesproyecto/TECLAS.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -439,8 +446,7 @@ body {
   }
 
   .item005 {
-    background: url(../proyecto/imagenesproyecto/TECLAS.png) no-repeat center
-      center;
+    background: url(../proyecto/imagenesproyecto/TECLAS.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -530,11 +536,9 @@ body {
     width: 20px;
     height: 20px;
     background: rgb(115, 150, 255);
-    background: linear-gradient(
-      90deg,
-      rgba(115, 150, 255, 1) 48%,
-      rgba(255, 255, 255, 1) 48%
-    );
+    background: linear-gradient(90deg,
+        rgba(115, 150, 255, 1) 48%,
+        rgba(255, 255, 255, 1) 48%);
     display: grid;
     border-radius: 50%;
   }
@@ -544,11 +548,9 @@ body {
     width: 20px;
     height: 20px;
     background: rgb(255, 136, 229);
-    background: linear-gradient(
-      90deg,
-      rgba(255, 136, 229, 1) 48%,
-      rgba(255, 255, 255, 1) 48%
-    );
+    background: linear-gradient(90deg,
+        rgba(255, 136, 229, 1) 48%,
+        rgba(255, 255, 255, 1) 48%);
     display: grid;
     border-radius: 50%;
   }
@@ -558,7 +560,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr,1fr,1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
     color: rgb(255, 255, 255);
     font-size: 20px;
     gap: 30px;
@@ -577,7 +579,7 @@ body {
   .item-1 {
     margin: 0 auto;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
     background: linear-gradient(black, rgb(39, 39, 39, 0.4), black);
     grid-column: 1/2;
     grid-row: 1/2;
@@ -607,7 +609,8 @@ body {
     position: relative;
     top: 50px;
   }
-  .item-1 p{
+
+  .item-1 p {
     position: relative;
     top: 300px;
   }
@@ -636,10 +639,11 @@ body {
   .itemm-2 img {
     width: 300px;
     position: relative;
-    
-    
+
+
   }
-  .item-2 p{
+
+  .item-2 p {
     position: relative;
     top: 300px;
   }
@@ -666,7 +670,8 @@ body {
     cursor: pointer;
     gap: 20px;
   }
-  .item-3 p{
+
+  .item-3 p {
     position: relative;
     top: 300px;
   }
@@ -680,7 +685,7 @@ body {
   .itemm-3 img {
     width: 300px;
     position: relative;
-    
+
   }
 
   .itemm-3 p {
@@ -691,7 +696,7 @@ body {
   }
 
   .item-3:hover {
-    
+
     border: 1px solid transparent;
     transition-property: all;
     transition-duration: 0.5s;
@@ -738,8 +743,7 @@ body {
     border: solid 1px transparent;
     margin: 100px auto;
     background: linear-gradient(to bottom, transparent, rgb(9, 9, 9)),
-      url(../proyecto/imagenesproyecto/WEB-Set-up-gamer-aprende-como-construirlo-y-elegirlo-desde-cero.jpg)
-        no-repeat center center;
+      url(../proyecto/imagenesproyecto/WEB-Set-up-gamer-aprende-como-construirlo-y-elegirlo-desde-cero.jpg) no-repeat center center;
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 20px;
@@ -813,13 +817,14 @@ body {
     border: solid 1px transparent;
     align-items: center;
     justify-content: center;
-    column-gap: 100px;
+
     background: url(../proyecto/imagenesproyecto/SH-1.jpg) no-repeat;
     margin: 0 auto;
     margin-bottom: 50px;
   }
 
   .fin1 {
+
     grid-column: 1/2;
     border: 5px rgb(255, 247, 232, 0.3);
     border-style: double;
@@ -839,7 +844,7 @@ body {
   .ult {
     background-color: rgba(6, 6, 6, 0.4);
     height: 200px;
-    width: 300px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -861,7 +866,7 @@ body {
     color: red;
     text-decoration: none;
     position: relative;
-    top: 20px;
+    top: -10px;
     right: -20px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2px;
@@ -872,8 +877,8 @@ body {
     color: red;
     text-decoration: none;
     position: relative;
-    top: 20px;
-    left: 110px;
+    top: -10px;
+    left: 60px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2px;
     border-radius: 20px;
@@ -883,12 +888,13 @@ body {
     color: red;
     text-decoration: none;
     position: relative;
-    top: 20px;
-    left: 100px;
+    top: -10px;
+    left: 40px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2px;
     border-radius: 20px;
   }
+
   @keyframes show {
     from {
       opacity: 0;
@@ -916,20 +922,19 @@ body {
     animation-fill-mode: both;
   }
 }
+
 /*RESPONSIVE COMPUTADORRRRRRRRRRRRRRRRRRRR*/
 @media (min-width: 1024px) {
   .iml {
     background: linear-gradient(to bottom, transparent, rgb(9, 9, 9)),
-      url(../proyecto/imagenesproyecto/fondoprincipal.png) no-repeat center
-        center;
+      url(../proyecto/imagenesproyecto/fondoprincipal.png) no-repeat center center;
     background-size: cover;
     height: 120vh;
     width: 100%;
   }
 
   .imagenprincipal {
-    background-image: linear-gradient(transparent)
-      url(../proyecto/imagenesproyecto/fondoprincipal.png);
+    background-image: linear-gradient(transparent) url(../proyecto/imagenesproyecto/fondoprincipal.png);
   }
 
   .encabezado {
@@ -1030,8 +1035,7 @@ body {
   }
 
   .item01 {
-    background: url(../proyecto/imagenesproyecto/Megamenu-Teclados-1500x1182-1.jpg)
-      no-repeat center center;
+    background: url(../proyecto/imagenesproyecto/Megamenu-Teclados-1500x1182-1.jpg) no-repeat center center;
 
     width: 400px;
     height: 400px;
@@ -1055,8 +1059,7 @@ body {
   }
 
   .item02 {
-    background: url(../proyecto/imagenesproyecto/maousemarca.png) no-repeat
-      center center;
+    background: url(../proyecto/imagenesproyecto/maousemarca.png) no-repeat center center;
 
     width: 400px;
     height: 400px;
@@ -1080,8 +1083,7 @@ body {
   }
 
   .item03 {
-    background: url(../proyecto/imagenesproyecto/audio.png) no-repeat center
-      center;
+    background: url(../proyecto/imagenesproyecto/audio.png) no-repeat center center;
 
     width: 400px;
     height: 400px;
@@ -1105,8 +1107,7 @@ body {
   }
 
   .item04 {
-    background: url(../proyecto/imagenesproyecto/camaralogo.png) no-repeat
-      center center;
+    background: url(../proyecto/imagenesproyecto/camaralogo.png) no-repeat center center;
 
     width: 400px;
     height: 400px;
@@ -1130,8 +1131,7 @@ body {
   }
 
   .item05 {
-    background: url(../proyecto/imagenesproyecto/camaralogo.png) no-repeat
-      center center;
+    background: url(../proyecto/imagenesproyecto/camaralogo.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -1181,8 +1181,7 @@ body {
   }
 
   .item001 {
-    background: url(../proyecto/imagenesproyecto/DIADEMABLANCA.png) no-repeat
-      center center;
+    background: url(../proyecto/imagenesproyecto/DIADEMABLANCA.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -1207,8 +1206,7 @@ body {
   }
 
   .item002 {
-    background: url(../proyecto/imagenesproyecto/COBRA-W.png) no-repeat center
-      center;
+    background: url(../proyecto/imagenesproyecto/COBRA-W.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -1233,8 +1231,7 @@ body {
   }
 
   .item003 {
-    background: url(../proyecto/imagenesproyecto/HORUS-WHITE-FULL.png) no-repeat
-      center center;
+    background: url(../proyecto/imagenesproyecto/HORUS-WHITE-FULL.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -1259,8 +1256,7 @@ body {
   }
 
   .item004 {
-    background: url(../proyecto/imagenesproyecto/TECLAS.png) no-repeat center
-      center;
+    background: url(../proyecto/imagenesproyecto/TECLAS.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -1285,8 +1281,7 @@ body {
   }
 
   .item005 {
-    background: url(../proyecto/imagenesproyecto/TECLAS.png) no-repeat center
-      center;
+    background: url(../proyecto/imagenesproyecto/TECLAS.png) no-repeat center center;
 
     width: 300px;
     height: 300px;
@@ -1374,11 +1369,9 @@ body {
     width: 20px;
     height: 20px;
     background: rgb(115, 150, 255);
-    background: linear-gradient(
-      90deg,
-      rgba(115, 150, 255, 1) 48%,
-      rgba(255, 255, 255, 1) 48%
-    );
+    background: linear-gradient(90deg,
+        rgba(115, 150, 255, 1) 48%,
+        rgba(255, 255, 255, 1) 48%);
     display: grid;
     border-radius: 50%;
   }
@@ -1388,11 +1381,9 @@ body {
     width: 20px;
     height: 20px;
     background: rgb(255, 136, 229);
-    background: linear-gradient(
-      90deg,
-      rgba(255, 136, 229, 1) 48%,
-      rgba(255, 255, 255, 1) 48%
-    );
+    background: linear-gradient(90deg,
+        rgba(255, 136, 229, 1) 48%,
+        rgba(255, 255, 255, 1) 48%);
     display: grid;
     border-radius: 50%;
   }
@@ -1553,8 +1544,7 @@ body {
     border: solid 1px transparent;
     margin: 100px auto;
     background: linear-gradient(to bottom, transparent, rgb(9, 9, 9)),
-      url(../proyecto/imagenesproyecto/WEB-Set-up-gamer-aprende-como-construirlo-y-elegirlo-desde-cero.jpg)
-        no-repeat center center;
+      url(../proyecto/imagenesproyecto/WEB-Set-up-gamer-aprende-como-construirlo-y-elegirlo-desde-cero.jpg) no-repeat center center;
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 20px;
@@ -1704,6 +1694,7 @@ body {
     padding: 2px;
     border-radius: 20px;
   }
+
   @keyframes show {
     from {
       opacity: 0;
@@ -1730,7 +1721,8 @@ body {
     animation-range: entry 50% cover 50%;
     animation-fill-mode: both;
   }
-  .nav{
+
+  .nav {
     display: none;
   }
 }
