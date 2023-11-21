@@ -321,19 +321,19 @@ body {
 
   .container3 {
     background-color: transparent;
-
     margin-left: 5%;
     width: 95%;
-    height: 350px;
+    height: 1000px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
     column-gap: 10px;
     align-items: center;
-    display: flex;
     margin: 0 auto;
+    position: relative;
+    
   }
 
   .container3 a:hover {
@@ -350,9 +350,8 @@ body {
 
     width: 300px;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    grid-column: 1/2;
+    grid-row: 1/2;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -375,9 +374,8 @@ body {
 
     width: 300px;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    grid-column: 2/3;
+    grid-row: 1/2;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -400,9 +398,8 @@ body {
 
     width: 300px;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    grid-column: 1/2;
+    grid-row: 2/3;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -425,9 +422,8 @@ body {
 
     width: 300px;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    grid-column: 2/3;
+    grid-row: 2/3;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -463,11 +459,16 @@ body {
 
   .item005:hover {
     width: 350px;
-
     color: rgb(255, 255, 255);
     border: 1px solid transparent;
     transition-property: all;
     transition-duration: 0.5s;
+  }
+  .producto{
+    text-align: center;
+    width: 700px;
+    position: relative;
+    bottom: 1500px;
   }
 
   .titulop {
@@ -560,7 +561,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     color: rgb(255, 255, 255);
     font-size: 20px;
     gap: 30px;
