@@ -763,9 +763,9 @@ body {
         border: solid 1px transparent;
         margin: 100px auto;
         background: linear-gradient(to bottom, transparent, rgb(9, 9, 9)),
-          url(../proyecto/imagenesproyecto/WEB-Set-up-gamer-aprende-como-construirlo-y-elegirlo-desde-cero.jpg) no-repeat center center;
+          url(../proyecto/imagenesproyecto/HEROS-desktop-6.jpg) no-repeat;
         background-repeat: no-repeat;
-        background-size: 100%;
+        
         padding: 20px;
       }
     
@@ -793,6 +793,7 @@ body {
         cursor: text;
         background-color: rgb(115, 150, 255, 0.3);
         color: #fff;
+        margin: 0 auto;
       }
     
       .formulario input:placeholder-shown {
@@ -804,6 +805,9 @@ body {
     
       .final p {
         font-size: 15px;
+        width: 300px;
+        height: 80px;
+
       }
     
       .for {
@@ -838,15 +842,15 @@ body {
         border: none;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(to bottom, transparent, rgb(9, 9, 9)),
-          url(../proyecto/imagenesproyecto/ire-pro-h848-2.webp) no-repeat center center;
+        background: linear-gradient(to bottom, transparent, rgb(9, 9, 9),rgb(9, 9, 9)),
+          url(../proyecto/imagenesproyecto/WEB-Set-up-gamer-aprende-como-construirlo-y-elegirlo-desde-cero.jpg) no-repeat center center;
         margin: 0 auto;
         margin-bottom: 50px;
         font-size: 11px;
       }
     
       .fin1 {
-        width: 50px;
+        width: 10px;
         grid-column: 1/2;
         grid-row: 1/2;
         margin: 0 auto;
@@ -865,7 +869,7 @@ body {
     
       .ult {
         height: 80px;
-        width: 200px;
+        width: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
