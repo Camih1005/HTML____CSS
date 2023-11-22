@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   font-family: "Zen Dots", sans-serif;
   background-repeat: no-repeat;
+  z-index: 0;
 }
 
 @media (max-width: 768px){
@@ -12,70 +13,12 @@ body {
         margin: 0;
         height: 5000px;
     }
-    :root {
-      --color_primario: #8527c3fd;
-      --color_primario_suave: #8527c383;
-      --color_blanco: #fff;
-      --altura_header: 80px;
-      --padding_left_right: 2rem;
-      --ancho_maximo: 1200px;
-  }
- 
-  }
-  a{
-    text-decoration: none;
-  }
-  ol,ul{
-    list-style: none;
-  }
-  
-  .header {
-    height: var(--altura_header);
-    background-color: var(--color_primario);
-  }
-  .navbar {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-
-  }
-  .menu_hamburguesa{
-    display: none;
-  }
-  .logo {
-  }
-  .labe_hamburguesa {
-  }
-  .list_icon {
-  }
-  .ul_links {
-    background-color: orange;
-    width: 100%;
-    position: absolute;
-    top: var(--altura_header);
-    
-  }
-  .li_links {
-  }
-  .link {
-  }
-  .encabezado{
-    display: none;
-
-  }
-    .item1 img{
-      display: none;
-    }
     
     .iml {
-      
         background: linear-gradient(to bottom, transparent, rgb(9, 9, 9)),
           url(../proyecto/imagenesproyecto/fondoprincipal.png) no-repeat center center;
         background-size: cover;
-        height: 100px;
+        height: 1000px;
         width: 100%;
       }
     
@@ -108,19 +51,7 @@ body {
     
       }
     
-      .menu-horizontal {
-        list-style: none;
-        
-      }
-    
-      .menu-horizontal>li>a {
-        display: block;
-        padding: 15px 20px;
-        color: white;
-        text-decoration: none;
-    
-      }
-    
+      
     
       .eliminar {
         display: none;
@@ -142,7 +73,30 @@ body {
       }
     
     
-      
+      .encabezado {
+        margin: 20px;
+        background-color: transparent;
+        border: solid 2px;
+        border-color: transparent transparent gray transparent;
+        margin-left: 30px;
+        width: 80%;
+        height: 120px;
+        display: grid;
+        justify-content: left;
+        align-items: center;
+        column-gap: 10px;
+        align-items: center;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr 1fr;
+    
+      }
+    
+      .encabezado .lista a {
+        color: rgb(164, 164, 164);
+        text-decoration: none;
+        border: solid black 1px;
+        margin: 5px;
+      }
     
       .item1{
         grid-column: 1/2;
@@ -164,7 +118,6 @@ body {
         
       }
       .item2{
-        display: none;
         grid-column: 2/3;
         
     
@@ -500,15 +453,13 @@ body {
         text-align: center;
         color: rgb(255, 255, 255);
         font-size: 30px;
-       ;
         
       }
       .grid2 a{
         position: relative;
-        left: 130px;
+        left: 100px;
       }
-
-     
+    
       #div1 {
         margin: 2px;
         width: 20px;
@@ -588,7 +539,7 @@ body {
       }
     
       .container4 {
-        width: 150px;
+        width: 400px;
         padding: 10px;
         position: relative;
         top: 900px;
@@ -597,7 +548,8 @@ body {
         grid-template-rows: 1fr 1fr 1fr;
         color: rgb(255, 255, 255);
         font-size: 20px;
-        gap: 30px;
+        row-gap: 60px;
+        
       }
     
       .gr {
@@ -618,18 +570,13 @@ body {
         grid-column: 1/2;
         grid-row: 1/2;
         width: 300px;
-        height: 300px;
+        height: 400px;
         transition-property: all;
         transition-duration: 1s;
         cursor: pointer;
       }
     
-      .item-1:hover {
-        width: 450px;
-        border: 1px solid transparent;
-        transition-property: all;
-        transition-duration: 0.5s;
-        height: 450px;
+      
       }
     
       .item-1 a {
@@ -658,17 +605,10 @@ body {
         transition-duration: 1s;
         cursor: pointer;
         width: 300px;
-        height: 300px;
+        height: 400px;
       }
     
-      .item-2:hover {
-        width: auto;
-        border: 1px solid transparent;
-        transition-property: all;
-        transition-duration: 0.5s;
-        width: 450px;
-        height: 450px;
-      }
+      
     
       .itemm-2 img {
         width: 300px;
@@ -729,14 +669,7 @@ body {
         top: 200px;
       }
     
-      .item-3:hover {
-    
-        border: 1px solid transparent;
-        transition-property: all;
-        transition-duration: 0.5s;
-        width: 450px;
-        height: 450px;
-      }
+      
     
       h1 {
         text-align: center;
@@ -987,9 +920,6 @@ body {
     background-size: cover;
     height: 1000px;
     width: 100%;
-  }
-  .header{
-    display: none;
   }
 
   .nav {
@@ -2757,8 +2687,5 @@ body {
   .producto{
     position: relative;
     top: 70px;
-  }
-  .header{
-    display: none;
   }
 }
