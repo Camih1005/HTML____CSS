@@ -8,6 +8,10 @@ body {
 }
 
 @media (max-width: 768px){
+    body{
+        margin: 0;
+        height: 5000px;
+    }
     .iml {
         background: linear-gradient(to bottom, transparent, rgb(9, 9, 9)),
           url(../proyecto/imagenesproyecto/fondoprincipal.png) no-repeat center center;
@@ -272,7 +276,7 @@ body {
         background-position: center;
         transition-property: all;
         transition-duration: 1s;
-        margin: o auto;
+        margin: 0 auto;
       }
     
       .item03:hover {
@@ -295,6 +299,7 @@ body {
         background-position: center;
         transition-property: all;
         transition-duration: 1s;
+        margin: 0 auto;
       }
     
       .item04:hover {
@@ -344,7 +349,7 @@ body {
         align-items: center;
         margin: 0 auto;
         position: relative;
-        top: 350px;
+        top: 600px;
         
       }
     
@@ -484,7 +489,7 @@ body {
         text-align: center;
         width: 700px;
         position: relative;
-        bottom: 100px;
+        top: 800px;
         margin: 0 auto;
       }
     
@@ -576,7 +581,8 @@ body {
       .container4 {
         width: 150px;
         padding: 10px;
-        
+        position: relative;
+        top: 900px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -734,10 +740,14 @@ body {
       .segundop p {
         text-align: center;
         color: #bebebe;
+        position: relative;
+        top: 600px;
         
       }
       .segundop h1{
         font-size: 30px;
+        position: relative;
+        top: 600px;
       }
     
       .segundop p a {
@@ -945,7 +955,7 @@ body {
     
         animation-timeline: --image;
         animation-name: show;
-        animation-range: entry 50% cover 50%;
+        animation-range: entry 1% cover 30%;
         animation-fill-mode: both;
       }
       .producto{
@@ -954,6 +964,10 @@ body {
       }
       .fin3{
         display: none;
+      }
+      .bajar{
+        position: relative;
+        top: 1100px;
       }
     }   
 
@@ -1889,12 +1903,12 @@ body {
   p,
   .footer1 {
     view-timeline-name: --image;
-    view-timeline-axis: block;
-
-    animation-timeline: --image;
-    animation-name: show;
-    animation-range: entry 50% cover 50%;
-    animation-fill-mode: both;
+        view-timeline-axis: block;
+    
+        animation-timeline: --image;
+        animation-name: show;
+        animation-range: entry 1% cover 30%;
+        animation-fill-mode: both;
   }
   
 }
@@ -2717,12 +2731,12 @@ body {
   p,
   .footer1 {
     view-timeline-name: --image;
-    view-timeline-axis: block;
-
-    animation-timeline: --image;
-    animation-name: show;
-    animation-range: entry 50% cover 50%;
-    animation-fill-mode: both;
+        view-timeline-axis: block;
+    
+        animation-timeline: --image;
+        animation-name: show;
+        animation-range: entry 1% cover 30%;
+        animation-fill-mode: both;
   }
 
   .nav {
