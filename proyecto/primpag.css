@@ -1908,10 +1908,7 @@ body {
         background-size: cover;
         height: 1000px;
         width: 100%;
-      }
-
-      .imagenprincipal {
-        background-image: linear-gradient(transparent) url(../proyecto/imagenesproyecto/fondoprincipal.png);
+      
       }
 
       .encabezado {
@@ -1939,10 +1936,8 @@ body {
         margin: 5px;
       }
 
-      .item1 img {
-        width: 100px;
-        height: 100px;
-        margin-left: 10px;
+      .grid img {
+       display: none;
       }
 
       .item2 input {
@@ -1980,12 +1975,6 @@ body {
           0 0 151px rgb(255, 255, 255);
       }
 
-      .segundop img {
-        height: 100%;
-        width: 100%;
-        filter: drop-shadow(100);
-      }
-
       .container2 {
         background-color: transparent;
         width: 95%;
@@ -2007,11 +1996,8 @@ body {
       .container2 a:hover {
         background: 100px;
       }
+      
 
-      .grid2 a {
-        color: #fff;
-        text-decoration: none;
-      }
 
       .item01 {
         background: url(../proyecto/imagenesproyecto/Megamenu-Teclados-1500x1182-1.jpg) no-repeat center center;
