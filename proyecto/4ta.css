@@ -7,141 +7,122 @@
         background-color: black;
         color: #fff;
         margin: 0;
+        padding: 0;
         font-family: "Zen Dots", sans-serif;
-        position: absolute;
+        box-sizing: border-box;
         
     }
-    *{
-      text-decoration: none;
+   
+    .item2,.item1{
+      display: none
+    }
+
+    :root
+    {
+        --white: #f9f9f9;
+        --green: #229395;
+        --green-light: #7acbcd;
+        --black: #36383F;
+        --grey: #85888C;
+    }
+    
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
       list-style: none;
     }
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
-:root
-{
-    --white: #f9f9f9;
-    --green: transparent;
-    --green-light: transparent;
-    --black: transparent;
-    --grey: transparent;
-}
-
-
-ul
-{
-    list-style: none;
-}
-
-.header
-{
-    background-color: var(--green);
-    box-shadow: 1px 1px 5px 0px var(--grey);
-    position: sticky;
-    top: 0;
-    width: 180px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-
-.logo
-{
-    display: inline-block;
-    color: var(--white);
-    font-size: 60px;
-    margin-left: 10px;
-}
-
-.navs
-{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: var(--green);
-    overflow: hidden;
-    max-height: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    z-index: 100;
-
-}
-
-.menu a
-{
-    display: block;
-    padding: 30px;
-    padding-right:60px;
-    color: var(--white);
-}
-
-.menu a:hover
-{
-    background-color: var(--green-light);
     
-}
-
-.hamb
-{
-    cursor: pointer;
-    float: left;
-    padding: 40px 20px;
+   
     
-}
-
-
-.hamb-line 
-{
-    background: var(--white);
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
+    main
+    {
+        padding: 20px;
+    }
     
-}
+    a
+    {
+        text-decoration: none;
+    }
+    
+    .nav ul
+    {
+        list-style: none;
+    }
+    
+    .header
+    {
+        background-color: var(--green);
+        box-shadow: 1px 1px 5px 0px var(--grey);
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    .logo{
+      display: inline-block;
+      color: var(--white);
+      font-size: 60px;
+      margin-left: 10px;
+    }
+    .nav{
+      width: 100%;
+      height: 100%;
+       position: fixed;
+       background-color: var(--green);
+       overflow: hidden;
+       max-height: 0;
+       transition: max-height .5s  ease-out;;
+    }
+    .menu a{
+      display: block;
+      padding: 30px;
+      color: var(--white);
 
-.hamb-line::before,
-.hamb-line::after
-{
-    background: var(--white);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
+    }
+    .menu a:hover{
+      background-color: var(--green-light);
+    }
+    .hamb{
+      cursor: pointer;
+      float: right;
+      padding: 40px 20px;
+    }
+    .ham-line{
+      background: var(--white);
+      display: block;
+      height: 2px;
+      position: relative;
+      width: 24px;
 
-.hamb-line::before
-{
-    top: 5px;
-}
-
-.hamb-line::after
-{
-    top: -5px;
-}
-
-.side-menu 
-{
-    display: none;
-}
-
-.side-menu:checked ~ nav
-{
-    max-height: 100%;
-}
-
-.side-menu:checked ~ .hamb .hamb-line 
-{
-    background: transparent;
-}
-
+    }
+    .ham-line::before,.ham-line::after{
+      background: var(--white);
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+    .ham-line::before{
+      top: 5px;
+    }
+    .ham-line::after{
+      top :-5px;
+    }
+    .side-menu{
+      display: none;
+    }
+    .side-menu:checked ~ nav{
+      max-height: 100%;
+    }
+    .side-menu:checked ~ .hamb .hamb-line{
+      background: transparent;
+    }
+    
 .side-menu:checked ~ .hamb .hamb-line::before 
 {
     transform: rotate(-45deg);
@@ -153,6 +134,9 @@ ul
     transform: rotate(45deg);
     top:0;
 }
+
+
+   
          .iml {
         background: linear-gradient(to bottom, transparent, rgb(9, 9, 9,0.1),rgb(9, 9, 9,0.1)),url(../proyecto/imagenesproyecto/concierto.png) no-repeat center center;
         background-size: cover;
@@ -207,18 +191,7 @@ ul
         width: 30px;
         
     }
-    .encabezado{
-        display: flex;
-        flex-direction: row;
-        width: 95%;
-        border-color: transparent transparent gray transparent;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 auto;
-        border-style: solid;
-        
-
-    }
+   
     .item3,.item4,.item5,.item6,.item7{
       display: none;
     }
@@ -278,6 +251,8 @@ ul
     }
     .vender h3{
         margin: 20px;
+    }
+    
     }
     .vender p{
         font-size: 14px;
@@ -394,6 +369,9 @@ ul
       .fondos h4{
         position: relative;
         right: 30px;
+      }
+      .fond img{
+        width: 90%;
       }
      
       span{
