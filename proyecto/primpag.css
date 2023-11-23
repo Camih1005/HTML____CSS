@@ -1852,7 +1852,7 @@ body {
   .container3,
   h1,
   p,
-  .footer1 {
+  .iframe{
     view-timeline-name: --image;
     view-timeline-axis: block;
     animation-timeline: --image;
