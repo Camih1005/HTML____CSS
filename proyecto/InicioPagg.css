@@ -554,7 +554,7 @@ body {
       }
     
       .container4 {
-        width: 380px;
+        width: 340px;
         padding: 10px;
         position: relative;
         top: 900px;
@@ -726,7 +726,7 @@ body {
       .footer1 {
         display: grid;
         grid-template-columns: 1f;
-        width: 90%;
+        width: 80%;
         height: auto;
         border: solid 1px transparent;
         margin: 100px auto;
