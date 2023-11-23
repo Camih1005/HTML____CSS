@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+}
+@media (max-width: 768px){
+.container1{
+    background: linear-gradient(to bottom, transparent, rgb(9, 9, 9,0.1),rgb(9, 9, 9,0.1)),url(../proyecto/imagenesproyecto/quieres-ser-distribuidor-header-web.jpg) no-repeat;
+    background-size: 100%;
+    height: 500px;
+    width: 100%;
+}
+}
