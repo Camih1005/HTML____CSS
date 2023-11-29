@@ -96,3 +96,15 @@ console.log(dias)
 const amigos = ['Kevin','Carlos','Nicolas']
 amigos.splice(1,2,'Cristian', 'Karol')
 console.log(amigos)
+
+
+/* 📌 .slice()
+	Nos permite copiar una parte de un arreglo a otro.
+	- 1er parametro - Posición desde donde queremos copiar.
+	- 2do parametro - Hasta antes de que elemento copiar.
+*/
+
+const frutas =['Fresa', 'Manzana', 'Uva', 'Piña', 'Mango', 'Naranja', 'Melon'];
+
+const frutasfavoritas = frutas.slice(1,5)
+console.log(frutasfavoritas)
