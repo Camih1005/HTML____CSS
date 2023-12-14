@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "../../.git"
+		},
+		{
+			"path": "../../Clase"
+		},
+		{
+			"path": "../../crear pagina"
+		},
+		{
+			"path": "../../ejercicioencasa"
+		},
+		{
+			"path": "../../Imagenes"
+		},
+		{
+			"path": "../../Index"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../proyecto"
+		},
+		{
+			"path": "../../talleresHtml_css"
+		},
+		{
+			"path": "../../testsss"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JAVASCRIPT"
+	}
+}
